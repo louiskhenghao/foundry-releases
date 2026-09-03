@@ -1,6 +1,5 @@
 # Foundry releases
 
-
 ## 0.2.1 — 2026-09-03
 
 - Fable 5.1: pick `fable` (Claude Code ≥ 2.1.259 resolves it to claude-fable-5-1) or the pinned `claude-fable-5-1` entry in Settings → Models & limits; the Docker image now ships Claude Code 2.1.259
@@ -8,6 +7,7 @@
 - Docker: markitdown is baked into the image (the in-container install could not write the root-owned tool dirs)
 - New guides: remote access via Tailscale (keep working from your phone), Telegram/Discord notification setup
 - Documentation audited against the code and corrected throughout; Simplified Chinese versions of the README and every guide
+
 ## 0.2.0 — 2026-08-28
 
 ### Version detection and one-click self-update (#7)
