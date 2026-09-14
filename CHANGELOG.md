@@ -1,5 +1,15 @@
 # Foundry releases
 
+## 0.3.0 — 2026-09-14
+
+- **Progress folders.** Every goal's work now lives next to your repository as `<repo>-foundry/<goal>/` — open it, run it, read it at any time. Goals in flight are moved there when the engine starts; Settings → Engine → *Progress folders* moves the root (ADR-0011).
+- **Milestones.** The Brief marks 1–3 tasks after which the goal pauses for a look: the preview starts, the Inbox and Telegram get the note (with a screenshot when the self-check is on). Continue, or write what you saw and confirm what it becomes — a hint for the remaining tasks, fix tasks (then a second look), or a Decision every later task follows (ADR-0012).
+- **Preview.** The engine runs the goal's dev server in its progress folder (ports 4200–4299, Settings → Preview; Docker: publish the range), restarts it after each task lands, stops it when idle. The Brief can name the run command; otherwise package.json is read.
+- **Self-check** (off by default). After each task lands, headless Chromium opens the preview, screenshots it and fails a must check on console, page or network errors. Chromium is installed from Settings → Preview.
+- **Clarify interviews you** in rounds before writing the Brief: only the decisions the repository cannot settle, each with a recommended answer and the reason it asks; answers become Decisions and Revise resumes the same session. Settings → Workflow chooses auto / always / never (ADR-0013).
+- **Goal review.** *Retry with hint* on a goal-level escalation spawns fix tasks from the reviewer's findings instead of re-running the review; a re-review sees the previous verdicts and may flip one only with a cited reason; the review timeout is 30 minutes.
+- A model change in Settings reaches goals in flight; the chosen style sample reaches mobile and general tasks and every task worktree; worker permission denials are guarded; the release script resumes after a failed image push.
+
 ## 0.2.1 — 2026-09-03
 
 - Fable 5.1: pick `fable` (Claude Code ≥ 2.1.259 resolves it to claude-fable-5-1) or the pinned `claude-fable-5-1` entry in Settings → Models & limits; the Docker image now ships Claude Code 2.1.259
