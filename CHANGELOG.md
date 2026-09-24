@@ -1,5 +1,15 @@
 # Foundry releases
 
+## 0.4.0 — 2026-09-24
+
+- **Model presets.** Every action — Clarify, Planner, Simple / Standard / Complex tasks, merges, goal and task reviews, docs, feedback triage, hints, style samples — now has its own model, set by a preset. Max, Production, Balanced and Economy ship built in, each with a table for Code, Docs & research and Media goals. Settings picks one per goal type (Code = Production, Docs & Media = Balanced by default) and the New goal form can pick another for one goal. Built-in presets can be edited and reset; your own can be created, renamed and deleted. Settings that used the old Strong / Worker / Cheap tiers move to the defaults once, with a note listing the old values.
+- **Model sync.** Foundry reads every model id your Claude Code knows and resolves fable / opus / sonnet / haiku with one tiny session each — automatically when Claude Code updates, or with *Sync models*. Dropdowns show what each alias resolves to and the newest pinned ids; no ids to type.
+- **Task difficulty.** The Clarifier rates each task simple, standard or complex (editable on the Brief); it picks the model the worker runs on. The last attempt of a task and every retry you grant run on the Complex-task model. A model found unavailable is remembered per goal.
+- **Faster delivery.** Repositories without CI no longer wait 90 s per PR for checks that never come; checks are polled every 10 s at first; each PR is retargeted once; new goals deliver as one PR by default. Dependencies are installed in the delivery worktree before its checks, so the Acceptance card no longer turns red after a delivery.
+- **Effort per goal.** Claude Code's effort level (low … max) is set on the New goal form or in Settings and applies to every session of the goal.
+- **Cheaper goal review.** Small goals (≤ 400 diff lines) are reviewed without the expensive sub-agents; large diffs are read from a file instead of being pasted into the prompt.
+- Live logs show when a sub-agent is still working; the interview round title no longer suggests four pages; session usage is labelled with the model that did the work.
+
 ## 0.3.0 — 2026-09-14
 
 - **Progress folders.** Every goal's work now lives next to your repository as `<repo>-foundry/<goal>/` — open it, run it, read it at any time. Goals in flight are moved there when the engine starts; Settings → Engine → *Progress folders* moves the root (ADR-0011).
