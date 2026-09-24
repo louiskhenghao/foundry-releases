@@ -1,5 +1,13 @@
 # Foundry releases
 
+## 0.4.1 — 2026-09-24
+
+- **User guide, in English and 中文, inside Foundry.** A **Help** link in the top bar opens ten plain-language pages — your first goal, the interview, the Brief, while it runs, when Foundry needs you, getting the result, every Settings section, costs and a FAQ — with an EN / 中文 toggle. Small **?** icons on the New goal form, the Brief, the interview, milestones, the Inbox, Settings and Usage open the matching section in a new tab.
+- **Documentation reorganised by reader:** `docs/guide` for people using the web UI, `docs/operate` for installing, updating, remote access, notifications and troubleshooting (with configuration and CLI references generated from the code), `docs/develop` for contributors (architecture, roles, testing, releasing, ADRs). Everything was checked claim by claim against the code.
+- **New goal form.** Effort, Models and TDD are button groups — every option visible, one click. The form now starts from Settings → New goal defaults (view, fast mode, TDD, delivery mode) instead of the browser's last choice; the Default models button names the preset it will use.
+- **CLI.** `goal new` takes `--models <preset>` (an unknown preset is refused with the valid ids), `--nature`, `--pace`, `--interview`, `--effort` and `--self-check`. The retired Strong / Worker tier settings and `FOUNDRY_MODEL_STRONG`, `FOUNDRY_MODEL_WORKER`, `FOUNDRY_GOAL_REVIEWER` are gone; a line in the log says so if one is still set.
+- Fixes: the Clarifier's task difficulty was dropped when the Brief was built or revised; changing only the housekeeping model no longer triggers the old-tier migration; the goal Overview shows the model preset; the Delete goal dialog, the Models note and the TDD hint now say what the engine actually does.
+
 ## 0.4.0 — 2026-09-24
 
 - **Model presets.** Every action — Clarify, Planner, Simple / Standard / Complex tasks, merges, goal and task reviews, docs, feedback triage, hints, style samples — now has its own model, set by a preset. Max, Production, Balanced and Economy ship built in, each with a table for Code, Docs & research and Media goals. Settings picks one per goal type (Code = Production, Docs & Media = Balanced by default) and the New goal form can pick another for one goal. Built-in presets can be edited and reset; your own can be created, renamed and deleted. Settings that used the old Strong / Worker / Cheap tiers move to the defaults once, with a note listing the old values.
