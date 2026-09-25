@@ -1,5 +1,11 @@
 # Foundry releases
 
+## 0.5.0 — 2026-09-25
+
+- **Merged work reaches your own checkout.** When a goal's pull request merges, Foundry fetches and fast-forwards your local base branch — only when that is safe (no uncommitted changes, no commits of your own on it) — and then removes the goal's progress folder, worktrees and local branches; screenshots and the goal's history stay. If anything could be lost, nothing is removed and the goal page says why, with **Pull into my checkout** and **Clean up anyway**. Settings → Git & delivery → *Update my local base branch after a merge* (on by default) turns it off.
+- **Late merges are noticed.** A PR that auto-merges after Foundry stopped waiting, or one you merge yourself on GitHub, is picked up within a few minutes (and whenever you open the goal); a PR closed without merging is shown as such. Delivered goals show three lines: merged on GitHub, your local branch up to date, workspace cleaned up.
+- **Follow-up goals.** *Continue with a follow-up…* on any finished goal opens a New goal form prefilled from it; the new goal's Clarify gets the earlier goal's understanding, decisions, task outcomes and review as background, and it starts from the base branch when the earlier work is merged, otherwise from the earlier goal's branch. Attachments and the chosen style direction come along (each can be unticked). The Goals list shows "↳ follows …", both goal pages link to each other, *Mark as follow-up of…* links existing goals, and the CLI takes `goal new --follows <id>`.
+
 ## 0.4.2 — 2026-09-25
 
 - **Docker: previews and the self-check work.** Dev servers in the container now listen on every interface, so a milestone preview opens from your computer (the compose file publishes ports 4200–4299 on 127.0.0.1). Chromium's system libraries are in the image, so the self-check can launch; the browser downloads once into a `playwright-browsers` volume and survives updates. Stopping a preview stops the dev server itself, and the container runs with an init process. Re-create the container with the new compose file to get the ports and the volume.
