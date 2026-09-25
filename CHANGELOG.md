@@ -1,5 +1,14 @@
 # Foundry releases
 
+## 0.4.2 — 2026-09-25
+
+- **Docker: previews and the self-check work.** Dev servers in the container now listen on every interface, so a milestone preview opens from your computer (the compose file publishes ports 4200–4299 on 127.0.0.1). Chromium's system libraries are in the image, so the self-check can launch; the browser downloads once into a `playwright-browsers` volume and survives updates. Stopping a preview stops the dev server itself, and the container runs with an init process. Re-create the container with the new compose file to get the ports and the volume.
+- **Chromium matches Foundry's Playwright.** *Install Chromium* uses the Playwright version Foundry ships instead of the newest one, so the self-check keeps working after Playwright releases.
+- **Self-check from the Brief.** The Brief's *How to run it* section has the goal's self-check switch, so the first tasks can be checked too.
+- **Top bar fits every screen** from phones to wide monitors; the e-mail address shows only where there is room.
+- **Clearer goal pages.** The interview names earlier questions by number and says what happened to unanswered ones; the work-in-progress card says what the goal's delivery setting will do; *Deliver…* in the Simple view opens the Delivery tab; task graph cards show each task's total cost.
+- Fixes: the final review's live log belongs to its goal and, like the Brief's Draft log, survives a page refresh; a resumed release pushes a changelog an earlier failed run left behind.
+
 ## 0.4.1 — 2026-09-24
 
 - **User guide, in English and 中文, inside Foundry.** A **Help** link in the top bar opens ten plain-language pages — your first goal, the interview, the Brief, while it runs, when Foundry needs you, getting the result, every Settings section, costs and a FAQ — with an EN / 中文 toggle. Small **?** icons on the New goal form, the Brief, the interview, milestones, the Inbox, Settings and Usage open the matching section in a new tab.
