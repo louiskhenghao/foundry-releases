@@ -1,5 +1,12 @@
 # Foundry releases
 
+## 0.6.0 — 2026-09-26
+
+- **Commits are yours.** Settings → Git & delivery → *Commit author* decides who Foundry's commits are written by: **you, with Foundry as co-author** (default — your git identity, from the project's or your global git config or your GitHub account, plus a `Co-authored-by: Foundry` line), **you only**, or **Foundry only**. Deploy integrations that only accept commits from members of their team (Vercel teams, for one) no longer block Foundry's pull requests. Applies to commits made from now on.
+- **A stopped delivery says why.** Each pull request lists the checks failing on it with their own description (for example "Deployment was blocked") and a link, and a *Delivery stopped* item appears in the Inbox with the same reason. A failing check Foundry has no CI log for is no longer handed to a fix task that can only fail, and a fix that changes nothing no longer pushes the same commit again.
+- **…and can be finished.** **Retry delivery** continues from the first pull request that is not merged, with a fresh budget for fixing CI; **Re-check** reads one pull request again and carries on when it passes; **Mark as delivered** finishes a delivery you completed yourself. A pull request you merge by hand after a failure is now noticed and finishes the delivery.
+- **Read any long message in full.** Every live-log entry is one line; click it for the whole message, read back from the session's transcript, with Markdown preview, raw view and copy. The session's final message now shows too. Shortened rows in the Activity tab, a task's commit message and long Inbox reports open the same way, and Inbox reports are no longer cut when they are raised.
+
 ## 0.5.0 — 2026-09-25
 
 - **Merged work reaches your own checkout.** When a goal's pull request merges, Foundry fetches and fast-forwards your local base branch — only when that is safe (no uncommitted changes, no commits of your own on it) — and then removes the goal's progress folder, worktrees and local branches; screenshots and the goal's history stay. If anything could be lost, nothing is removed and the goal page says why, with **Pull into my checkout** and **Clean up anyway**. Settings → Git & delivery → *Update my local base branch after a merge* (on by default) turns it off.
