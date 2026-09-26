@@ -1,5 +1,12 @@
 # Foundry releases
 
+## 0.6.1 — 2026-09-26
+
+- **Command-line tools no longer stuck at PARTIAL.** ffmpeg, mmx and autoskills count as installed as soon as their command is found (only tools that also ship a skill need both), so their rules and hints reach sessions again — as a command-line tool to run, not a skill to invoke.
+- **Honest plugin updates.** When a plugin's author changes files without raising its version number, the Skills page now says *unreleased changes* and explains why, instead of an *update available* that the Update button could never clear. Plugin skills show the exact commit they were installed from, a difference only in a README or changelog is no longer an update, and a plugin can be removed as a whole with **Uninstall plugin**.
+- **Adopt that works — or says why not.** Adopt is only offered when Foundry can install the skill itself, and a failed adopt reports the reason instead of a false "adopted". gpt-image-2 and kb-retriever now install from their repository.
+- **An Operations bar on the Skills page.** Every install, update, adopt or uninstall gets its own tab with its own full-size log; several can run at once, finished ones stay until you close them, and the logs survive a page reload.
+
 ## 0.6.0 — 2026-09-26
 
 - **Commits are yours.** Settings → Git & delivery → *Commit author* decides who Foundry's commits are written by: **you, with Foundry as co-author** (default — your git identity, from the project's or your global git config or your GitHub account, plus a `Co-authored-by: Foundry` line), **you only**, or **Foundry only**. Deploy integrations that only accept commits from members of their team (Vercel teams, for one) no longer block Foundry's pull requests. Applies to commits made from now on.
