@@ -1,5 +1,18 @@
 # Foundry releases
 
+## 0.7.0 — 2026-09-28
+
+- **MCP servers.** A new MCP servers tab (Extensions page) lists every MCP server Claude Code loads for your account: yours, those plugins bring, and claude.ai connectors. Install Foundry's recommendations (Context7, Playwright; Exa or Brave Search for web search) or your own, change a server's key, remove one, and run a health check. Connect claude.ai connectors (Gmail, Google Drive…) and sign in to servers that need an account, with the terminal command as a fallback.
+- **Allowed in goals.** Goals now use only the MCP servers you allow, and only in the sessions that do the work. A refused server can be allowed from its Inbox item with one click.
+- **The Skills page is now Extensions**, with Skills and MCP servers tabs.
+- **More keys.** MiniMax, ElevenLabs and Groq keys in Settings → Tools & keys reach sessions (MiniMax through mmx). A skill that lacks its key says so where you pick it, and what it loses without it.
+- **MiniMax quota** on the Usage page, with an amber dot in the header when it runs low.
+- **Keys stay put.** Saved keys and tokens are no longer sent back to the browser, and settings.json is readable by its owner only.
+- **Agents page.** A session's log shows one line per entry; click one to read it in full.
+- **Sign-in** uses a Pro or Max subscription only.
+- **Fixes:** the sign-in, update and restart dialogs were cut off or hidden; stray scrollbars on tab rows; "ago ago" on the Agents page; the header now fits phones; the escalation card keeps its state across screens.
+- **Docs:** the README shows the product in pictures, and each docs folder opens on GitHub.
+
 ## 0.6.1 — 2026-09-26
 
 - **Command-line tools no longer stuck at PARTIAL.** ffmpeg, mmx and autoskills count as installed as soon as their command is found (only tools that also ship a skill need both), so their rules and hints reach sessions again — as a command-line tool to run, not a skill to invoke.
