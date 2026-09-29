@@ -1,5 +1,28 @@
 # Foundry releases
 
+## 0.7.1 — 2026-09-29
+
+- docs(guide): a finished task's files come from its commit
+- feat(web): open a task's files wherever they now live
+- fix(server): a finished task's files are read from its commit
+- docs(readme): each How it works step opens its guide page
+- docs(guide): the ⚙ menu, task difficulty and openable files
+- feat(web): Settings, Setup, Help and the theme move to one menu
+- fix(web): the preset name and description line up
+- feat(web): task cards show their difficulty and model
+- feat(web): a task's spec opens full and its relevant files open
+- feat(web): code in the file preview is coloured by language
+- feat(server): more source files open as code in the preview
+- docs(guide): a task's files, the JSON tree and the file preview
+- chore(demo): tasks log absolute paths and one makes an image
+- feat(web): a task shows the files it made
+- feat(web): JSON in the live log reads as a searchable tree, and file paths open
+- feat(server): a merged task's file paths still open
+- fix(web): the goal page stays in view behind an open task
+- feat(server): serve a goal's files by path, and list the files a task made
+- docs(guide): a screenshot for every tab of the goal page
+- chore(demo): seed goals whose every tab has real work to show
+
 ## 0.7.0 — 2026-09-28
 
 - **MCP servers.** A new MCP servers tab (Extensions page) lists every MCP server Claude Code loads for your account: yours, those plugins bring, and claude.ai connectors. Install Foundry's recommendations (Context7, Playwright; Exa or Brave Search for web search) or your own, change a server's key, remove one, and run a health check. Connect claude.ai connectors (Gmail, Google Drive…) and sign in to servers that need an account, with the terminal command as a fallback.
