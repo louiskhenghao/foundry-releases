@@ -1,5 +1,10 @@
 # Foundry releases
 
+## 0.7.2 — 2026-09-29
+
+- feat(web): full-height task panel with columns that scroll separately
+- fix(web): center dialogs on small screens instead of pinning them to the bottom
+
 ## 0.7.1 — 2026-09-29
 
 - docs(guide): a finished task's files come from its commit
