@@ -1,5 +1,113 @@
 # Foundry releases
 
+## 1.0.0 — 2026-10-05
+
+- docs: describe Workspace & preview, the Brief line on the Overview and the Brief's section list
+- feat(web): list the Brief's sections beside it, each with its state
+- feat(web): show the Brief as one line under the timeline
+- feat(web): merge the progress folder card into the preview as Workspace & preview
+- feat(web): describe the preview's branch under its menu
+- docs: describe the preview branch menu, the environment dialog and the reworked Overview cards
+- feat(web): edit the preview environment in a dialog with a note per variable
+- feat(web): pick the branch a finished goal's preview runs
+- feat(web): move the self-check switch to the Acceptance card
+- feat(web): show each completion action as a row with its details and Re-run
+- feat(web): group project skills by what they cover
+- feat(web): put the Simple | Expert switch in the goal header
+- feat(engine): preview another branch of a finished goal
+- feat(engine): explain each preview environment variable
+- feat(engine): re-run a completion action that failed
+- feat(core): record the branch a finished goal's preview runs and the docs commit
+- docs(adr): note that stacked branches are reconciled with the remote before a replay
+- fix(engine): reconcile a stacked branch with its remote copy before syncing it
+- docs: describe resumable stacked delivery (ADR-0023) and the new Delivery tab controls
+- feat(web): edit delivery settings any time and label each PR
+- feat(engine): save, resume and start over a delivery
+- fix(engine): call the local base up to date once it holds the last merged PR
+- feat(engine): resume a stacked delivery instead of rebuilding it
+- feat(core): record saved policies, branch syncs and deleted branches per delivery PR
+- docs: refresh Goals and Usage screenshots for paging and the grouped breakdowns
+- docs(guide): describe the shared Models panel layout for Codex
+- feat(web): give the Codex Models panel the same layout as the other agent
+- refactor(web): extract the Models panel's preset building blocks
+- feat(web): choose how many goals a page shows, and always see the count
+- feat(web): show all three usage breakdowns at once as grouped rows
+- feat(web): compare usage by time and tokens, with cost for the agent that has it
+- feat(usage): report time and tokens for every usage breakdown
+- fix(web): keep the shared usage numbers still when switching coding agents
+- feat(skills): uninstall shared Codex skills without touching the Anthropic CLI's
+- fix(skills): stop reporting another tool's skill as a stale copy
+- fix(preview): keep a preview the person started on a finished goal
+- docs: record why the preview environment stays outside the goal's folder
+- feat(web): preview card shows where it runs, what it serves, failures and its environment
+- feat(preview): show what a preview serves and why it failed, and give it its environment
+- feat(preview): keep per-repository preview variables outside the repository
+- feat(preview): find the ports a start command's processes listen on
+- docs: refresh guide screenshots for the header logo
+- docs: show the Foundry logo at the top of both READMEs
+- feat(web): add the Foundry logo as favicon and header mark
+- docs: point readers to the changelog for what a release contains
+- feat: one-line install for macOS and Linux
+- build(docker): enable corepack for pnpm and yarn repositories
+- feat(preview): install missing dependencies before apps start
+- feat(setup): install a coding agent's CLI from Setup without npm
+- docs: record several-app previews and their services
+- feat(web): show each preview app and its services
+- feat(preview): run every app of a goal side by side
+- feat(preview): bring up the compose services the apps need
+- feat(preview): detect workspace apps and compose dependency services
+- feat(core): let a Brief list several apps to preview
+- docs: refresh Goals and Usage screenshots for the stacked layouts
+- feat(web): show Foundry activity for both coding agents together
+- fix(usage): stop showing a usage-window signal after its window reset
+- feat(web): stack Goals rows and page the list
+- feat(web): stack Agents rows and mark each coding agent
+- feat(agents): name each Foundry session's task and attempt
+- docs: refresh guide screenshots for the Open full icon and attachments placement
+- feat(web): open goal and Brief text in full with one icon button
+- feat(web): show a goal's attachments right under its description
+- docs: refresh guide screenshots for the coding agent label and goal badges
+- fix(web): explain the usage-window rate-limit signal in plain words
+- feat(web): show each goal's coding agent in the list and header
+- feat(web): group Foundry agent sessions by goal
+- refactor: rename Agent backend to Coding agent
+- docs: refresh shared workflow guides and demo screenshots
+- feat(web): unify account, usage and session views
+- fix(agents): recognize native client-name version handshakes
+- fix(skills): select native recipes and remove obsolete workflow dependency
+- fix(auth): refresh native CLI discovery for account actions
+- docs: align guides with native backend support
+- test(plugins): wait for native process readiness
+- fix(engine): honor native skill and repository instructions
+- fix(usage): report pauses for each backend
+- fix(web): unify backend selectors and dropdown spacing
+- docs: capture the complete desktop recovery view
+- docs: document provider recovery and native shutdown guarantees
+- fix(web): scope recovery actions to the goal backend
+- fix(runtime): reap native descendants and retain denied tool names
+- fix(models): preserve explicit overrides in follow-up goals
+- fix(auth): discard stale account status after sign-in changes
+- fix(usage): derive quota windows from the signed-in account
+- docs: explain native plugins and account command ownership
+- fix(cli): honor provider scope and server-owned accounts
+- feat(extensions): manage native plugins through the host cli
+- docs: document provider extensions and native account status
+- fix(cli): preserve follow-up presets and default reasoning
+- feat(web): expose provider setup quota and captured models
+- feat(engine): isolate provider services and native session history
+- feat(engine): add native account quota and mcp adapters
+- docs: explain captured presets and model compatibility
+- feat(web): expose independent presets and model controls
+- feat(engine): add per-role presets and native model discovery
+- test(skills): keep update fixtures independent of network
+- docs: explain multi-provider accounts and integration limits
+- feat(web): add independent accounts and provider-aware goal controls
+- feat(engine): route goals through isolated agent providers
+- docs(install): document and package the optional codex backend
+- feat(web): adapt authentication settings and usage for the selected backend
+- feat(engine): select agent backend with isolated data and native authentication
+- feat(runner): add native codex execution with guarded tools and session recovery
+
 ## 0.7.2 — 2026-09-29
 
 - feat(web): full-height task panel with columns that scroll separately
