@@ -1,5 +1,15 @@
 # Foundry releases
 
+## 1.0.1 — 2026-10-06
+
+- docs: describe the guided install and sharing the host's Docker (ADR-0024)
+- feat(install): one installer for source and Docker that starts Foundry
+- fix(docker): keep the updater sidecar running on Docker 29, and let the port be chosen
+- feat(fs): start the folder picker at the shared projects folder in the image
+- feat(preview): start a preview's services on the host's Docker from the image
+- fix(web): say why Create is disabled on the New goal form, whatever the reason
+- fix(engine): set CLAUDE_CONFIG_DIR only for a non-default home
+
 ## 1.0.0 — 2026-10-05
 
 - docs: describe Workspace & preview, the Brief line on the Overview and the Brief's section list
