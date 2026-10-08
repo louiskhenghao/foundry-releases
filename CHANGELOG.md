@@ -1,5 +1,10 @@
 # Foundry releases
 
+## 1.1.2 — 2026-10-08
+
+- feat(usage): resume paused sessions by hand, and show the retry date
+- fix(usage): stop pausing for a month on an extra-usage window that stopped nothing
+
 ## 1.1.1 — 2026-10-08
 
 - feat(setup): sign the GitHub CLI in from the Setup page
