@@ -1,5 +1,25 @@
 # Foundry releases
 
+## 1.1.3 — 2026-10-08
+
+- docs(guide): retake the screenshots
+- docs(guide): describe Codex plugin skills, the Codex sign-in code and the wider setup check
+- fix(skills): show skills installed outside Foundry on the next Skills page load
+- fix(codex): put back the AGENTS.md autoskills writes, as it does the other guidance file
+- fix(setup): flag a Codex CLI that cannot run Foundry's sessions
+- perf(codex): load no configured MCP servers into Codex's Clarify and planner
+- fix(codex): continue a Codex session that ran out of tool calls
+- fix(codex): pause Codex until its used-up quota window resets, not five minutes
+- fix(codex): show the Codex sign-in code plainly and wait as long as it lasts
+- fix(web): check every agent in use for setup, and show setting sources on its own tab
+- fix(codex): name the goal's own agent, and drop instructions Codex cannot follow
+- fix(codex): tell Codex sessions to read skills, not call a Skill tool
+- fix(settings): say a pack option has nothing for this agent instead of 0 missing
+- fix(skills): list Codex plugin skills and count plugin packs as installed on Codex
+- fix(web): give every header control one height
+- fix(restart): restart a task that is waiting in the Inbox, and review it against its new base
+- fix(review): tell the task reviewer which files a long diff leaves out
+
 ## 1.1.2 — 2026-10-08
 
 - feat(usage): resume paused sessions by hand, and show the retry date
