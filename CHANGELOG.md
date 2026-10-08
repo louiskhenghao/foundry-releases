@@ -1,5 +1,16 @@
 # Foundry releases
 
+## 1.2.0 — 2026-10-08
+
+- feat: Transfer — carry settings, keys and goals to another Foundry, typically on a new computer (⚙ menu → Transfer, or `foundry export` / `foundry import`)
+- feat: import merges — goals already here are skipped, settings are taken section by section, credentials one by one
+- feat: imported goals arrive as history; map their repository to restore their branch, and Reattach an unfinished one to carry it on here
+- feat: Keys & secrets travel sealed with a password (scrypt + AES-256-GCM)
+- feat(cli): foundry export, import and reattach, with or without a running server
+- feat(web): the ⚙ menu shows the running version and flags a newer one
+- fix(core): keep the newest rate limit sighting when older usage arrives
+- docs(guide): Moving to a new computer
+
 ## 1.1.3 — 2026-10-08
 
 - docs(guide): retake the screenshots
