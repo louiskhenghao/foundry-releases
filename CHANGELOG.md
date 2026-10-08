@@ -1,5 +1,64 @@
 # Foundry releases
 
+## 1.1.0 — 2026-10-08
+
+- docs(guide): retake the screenshots
+- fix(brief): do not ask again for a style the interview already settled
+- feat(goal): show the preview, milestones and verdict in Simple view
+- feat(milestones): show a walkthrough as same-size tiles and go through it in a window
+- feat(budget): count a goal's time while Foundry works on it, Clarify included
+- fix(clarify): keep the planner's task keys unique and its dependencies real
+- fix(server): answer only to this computer's names, and keep other sites off the live feed
+- fix(ui): wrap a card's actions below its title before squeezing them
+- chore(interview): drop a doc comment left without its function
+- fix(settings): follow the code-server install until it is done
+- fix(checks): say when a check's whole output fails to load
+- fix(milestones): show every milestone's walkthrough however long the goal ran
+- fix(ui): keep a dropdown reachable by keyboard and inside the window
+- fix(diff): read a cut, binary or empty file right in the diff viewer
+- fix(brief): keep milestones through Revise and scope 'no tasks' to Clarify
+- fix(clarify): give the planner the rules for cutting a plan, not the Clarifier's
+- fix(clarify): keep the goal's interview depth through Re-clarify
+- fix(clarify): start the shown Clarify step afresh with each session
+- fix(clarify): ask for what is missing, plan a repaired skeleton, and stop after a kill
+- fix(tailnet): take down serves a crashed run left on the tailnet
+- fix(server): refuse changes another website makes the browser send
+- fix(server): open a resolve worktree only for a task of the goal
+- fix(editor): put VS Code in the browser behind a password and keep workspace trust
+- fix(sessions): book a resume the CLI did not restore at its own cost
+- docs(guide): retake the screenshots
+- feat(open): open a repository or a goal's folder in VS Code in the browser
+- fix(web): drop the four-round limit from the interview card
+- feat(web): show which Clarify step runs and for how long
+- fix(clarify): give the turn that writes the Brief time to finish
+- perf(clarify): write the task plan once, in a planner session of its own
+- fix(clarify): stop the Brief schema tripping the model into rewriting the Brief
+- perf(clarify): load no MCP servers into Clarify sessions
+- fix(sessions): book a resumed session for what the run added
+- docs(self-check): say what the self-check costs and how it differs from Have a look
+- feat(web): list a goal's milestones with their recordings on the Overview
+- feat(web): show a changed file's diff in a window, highlighted
+- feat(web): open an acceptance check in a window, with every run
+- fix(web): keep dropdown menus inside the window
+- fix(web): keep the task panel's close button in its top-right corner
+- docs(guide): retake the screenshots
+- chore(demo): plan a milestone walkthrough in the seeded demo
+- fix(milestones): say in words why no walkthrough was planned
+- docs(context): say where a notification's links point now
+- feat(clarify): choose how deep the interview goes, from 1 to 5
+- docs(guide): name the Have a look switch in the Acceptance card's description
+- feat(web): show the goal review's verdict right under the goal
+- feat(notify): send clickable links, on this computer and on the tailnet
+- feat(milestones): record a walkthrough of the preview and send it with the milestone
+- feat(milestones): make Have a look a setting, per goal
+- fix(sessions): keep image tools' output folder out of goals that make no images
+- fix(context): build no graph for repositories without code
+- fix(completion): keep gitnexus guidance out of goal folders and task commits
+- fix(docs): write a goal's docs when it is accepted as-is, and after its folder is gone
+- feat(preview): keep an app's usual port and point env addresses at the port it got
+- feat(preview): run a finished goal's preview in the person's checkout when it fits
+- fix(preview): stop pnpm handing a literal -- to the dev server
+
 ## 1.0.1 — 2026-10-06
 
 - docs: describe the guided install and sharing the host's Docker (ADR-0024)
