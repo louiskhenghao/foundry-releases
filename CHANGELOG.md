@@ -1,5 +1,11 @@
 # Foundry releases
 
+## 1.1.1 — 2026-10-08
+
+- feat(setup): sign the GitHub CLI in from the Setup page
+- feat(github): run the GitHub sign-in as a session a page can follow
+- fix(install): sign in through the terminal's own device, not /dev/tty
+
 ## 1.1.0 — 2026-10-08
 
 - docs(guide): retake the screenshots
