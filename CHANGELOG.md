@@ -1,5 +1,15 @@
 # Foundry releases
 
+## 1.3.0 — 2026-10-09
+
+- fix(engine): a task no longer hangs in observing when a check's dev server keeps its output open — checks, installs, docker compose and timed git commands run in their own process group and are killed whole on a timeout
+- feat(engine): unstick a task without restarting Foundry — Start now on a ready task nothing holds back, Stop and retry on a running task with no live session; a waiting task says why
+- feat(preview): open Docker when it is installed but not running, before a preview's services start
+- feat(milestone): the walkthrough opens the app the task is about, leaves screenshots of error pages out, takes missing env keys from your checkout, and falls back to the app's mock command (new Mock command in How to run it, or a dev:mock script)
+- feat(notify): bold titles; a localhost link is written out as copyable code on Telegram; a stacked delivery is told in a few messages instead of one per pull request
+- fix(web): a session stopped by its cost or turn cap reads amber and names the per-session cap, not the goal budget
+- feat(web): milestones open independently, goal review notes open full, the file preview steps through a task's files, and the check dialog shows runs first with formatted output
+
 ## 1.2.0 — 2026-10-08
 
 - feat: Transfer — carry settings, keys and goals to another Foundry, typically on a new computer (⚙ menu → Transfer, or `foundry export` / `foundry import`)
