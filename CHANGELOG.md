@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 1.3.1 — 2026-10-10
+
+- fix(tailnet): preview, VS Code (web) and notification links no longer fall back to localhost when Foundry runs as a launchd service on a Mac without `tailscale` on PATH — the Tailscale app's binary is now called through a shell, so it answers as the CLI
+
 ## 1.3.0 — 2026-10-09
 
 - fix(engine): a task no longer hangs in observing when a check's dev server keeps its output open — checks, installs, docker compose and timed git commands run in their own process group and are killed whole on a timeout
