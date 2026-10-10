@@ -1,5 +1,13 @@
 # Foundry releases
 
+## 1.4.0 — 2026-10-10
+
+- feat: the Ports page (⚙ → Ports) — every port in use on Foundry's computer and what holds it: Foundry's server, previews, VS Code (web), what a task started, the Docker services Foundry runs, tailscale serve forwards, Docker containers, other programs and holders only sudo can see
+- feat: stop & release a port from the page after a confirmation that says what stops; Foundry itself, the serve that carries it, system and other users' programs are never offered
+- feat(web): a preview that fails with EADDRINUSE names the holder of that port on its card, with stop & release and a link to the page
+- feat(cli): foundry ports lists the same (--all, --json)
+- fix(web): Stop and retry in the task panel confirms in a dialog
+
 ## 1.3.2 — 2026-10-10
 
 - fix(preview): a preview no longer fails with EADDRINUSE on a port lsof shows as free — a port held on another address (tailscale serve --https=<port>, which loopback does not see) is skipped and the app gets the next free port
