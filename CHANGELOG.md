@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 1.3.2 — 2026-10-10
+
+- fix(preview): a preview no longer fails with EADDRINUSE on a port lsof shows as free — a port held on another address (tailscale serve --https=<port>, which loopback does not see) is skipped and the app gets the next free port
+
 ## 1.3.1 — 2026-10-10
 
 - fix(tailnet): preview, VS Code (web) and notification links no longer fall back to localhost when Foundry runs as a launchd service on a Mac without `tailscale` on PATH — the Tailscale app's binary is now called through a shell, so it answers as the CLI
