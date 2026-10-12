@@ -1,5 +1,12 @@
 # Foundry releases
 
+## 1.5.0 — 2026-10-12
+
+- feat(web): New folder in the folder picker; Choose with Finder… is left out when Foundry is opened from another device; the picker keeps one height instead of jumping
+- feat(web): the Agents page is laid out like Extensions and Ports — cards per goal and per folder that fold, live only, an Overview, a red Stop, and subagents that fold under their session
+- feat(web): coloured action buttons on Ports (Open, Stop & release) and Extensions (View, Update, Adopt, Uninstall); Ports cards fold, and a port that cannot be stopped says why in place of the button
+- fix(web): a running skills operation shows beside its source's status instead of on a line of its own
+
 ## 1.4.0 — 2026-10-10
 
 - feat: the Ports page (⚙ → Ports) — every port in use on Foundry's computer and what holds it: Foundry's server, previews, VS Code (web), what a task started, the Docker services Foundry runs, tailscale serve forwards, Docker containers, other programs and holders only sudo can see
