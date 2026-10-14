@@ -1,5 +1,15 @@
 # Foundry releases
 
+## 1.6.0 — 2026-10-14
+
+- feat(web): install optional skills in one click (+ optional), or a whole tier from its heading (Install N)
+- feat(web): side panels — Extensions' Catalog, the Ports and Agents overviews — stay in view while their list scrolls
+- feat(web): the "waiting for you" card is laid out like the rest of the app: a heading with the reason's icon and colour, the details and your answer, the actions in a footer
+- feat(web): the merge conflict page colours code with line numbers and tints ours, theirs and the conflict markers in the editable result
+- fix: a task that runs alone (not parallelizable) says it waits for the running task to finish, not that it depends on it, and the task graph marks it runs alone
+- fix: times show in your computer's time zone instead of UTC (Activity, imported goals, usage notifications, foundry usage)
+- fix(web): everything clickable shows the pointer cursor
+
 ## 1.5.0 — 2026-10-12
 
 - feat(web): New folder in the folder picker; Choose with Finder… is left out when Foundry is opened from another device; the picker keeps one height instead of jumping
