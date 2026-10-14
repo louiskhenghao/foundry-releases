@@ -1,5 +1,21 @@
 # Foundry releases
 
+## 1.8.0 — 2026-10-14
+
+- fix(engine): an engine error mid-attempt closes the attempt and gives it back
+- fix(engine): recordings stay out of the way of work, and the final walkthrough only counts when nothing overtook it
+- fix(engine): tell the worker a webServer command must keep running
+- fix(engine): a milestone script's check and its recording run it the same way
+- docs: feature milestones, their scripts and the final walkthrough
+- feat(web): milestones show whether they were shown, with Rerun and the final walkthrough
+- feat(server): rerun a milestone, and say which milestones are being recorded
+- feat(notify): a failed or fake-data milestone says so, and the final walkthrough sends one message
+- feat(engine): the planner gives every feature a milestone, and its task writes the script
+- feat(engine): feature milestones go on, are repaired once, and end in a final walkthrough
+- feat(engine): record a milestone by running its script, one recording after another
+- feat(core): a milestone can carry a Playwright script, and a goal a final walkthrough
+- test(engine): the Start now test uses a goal state that exists
+
 ## 1.7.0 — 2026-10-14
 
 - docs(guide): Start now can start a ready task past the scheduler's caution
