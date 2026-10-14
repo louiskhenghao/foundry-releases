@@ -1,5 +1,12 @@
 # Foundry releases
 
+## 1.7.0 — 2026-10-14
+
+- docs(guide): Start now can start a ready task past the scheduler's caution
+- feat(web): Start now on a ready task held back only by the scheduler, after a confirmation
+- feat(server): the goal view says whether a ready task's wait can be overridden
+- feat(engine): Start now can override the scheduler's caution on a ready task
+
 ## 1.6.0 — 2026-10-14
 
 - feat(web): install optional skills in one click (+ optional), or a whole tier from its heading (Install N)
