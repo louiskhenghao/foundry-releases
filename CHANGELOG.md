@@ -1,5 +1,23 @@
 # Foundry releases
 
+## 1.9.0 — 2026-10-16
+
+- docs: review fixes in the guide, CONTEXT and ADR-0032; the investigation caps under Limits
+- fix(web): the Brief waits for the investigation, references need Clarify, audit rows name their fix task
+- fix(catalog): pin rea-agents 6.5.0, deny the evidence bundle, ponytail-review preferred for task reviews
+- fix(delivery): a stacked delivery ships the reference report; a PR body clips long review notes
+- fix(engine): the discipline's scope decides Plan lean, the plain profile's hint and the audit default
+- fix(engine): the investigation commits its report alone, the audit stays in the goal's files, an unreadable MCP catalog fails closed
+- fix(core): goal rows from an older Foundry read with the new fields' defaults
+- fix(engine): an unreadable MCP catalog denies nothing instead of failing the session
+- docs(guide): screenshots with the Ponytail switch and the reference row
+- docs: Ponytail, the audit, references and REA in the guide, CONTEXT and ADR-0032
+- feat: a goal can learn from a reference, investigated with REA before Clarify
+- feat: REA, reverse engineering, as an optional MCP server with its tools that run things kept off
+- feat(engine): an optional audit of the finished branch before the goal review
+- fix(delivery): a task's review notes reach its pull request
+- feat: Ponytail, the lazy senior dev, as a per-goal discipline next to TDD
+
 ## 1.8.0 — 2026-10-14
 
 - fix(engine): an engine error mid-attempt closes the attempt and gives it back
