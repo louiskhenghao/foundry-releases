@@ -1,5 +1,20 @@
 # Foundry releases
 
+## 1.10.0 — 2026-10-16
+
+## CAD goals with text-to-cad
+- A new goal nature, **CAD**: 3D parts and assemblies (STEP always; STL, 3MF or GLB on request), engineering drawings, DXF cut profiles and URDF/SRDF/SDF robot files, made with text-to-cad's skills (build123d and OpenCASCADE through cadgen). Code model presets, the default view, TDD preferred, Ponytail on; the Clarifier asks about the manufacturing process and the key dimensions; one task per part with Python geometry checks; sources are committed, exports and front/top/right/isometric snapshots are delivered as artifacts; reviewers read the snapshots.
+- **Setup → 3D models — text-to-cad (CAD)**: one card installs the plugin for the selected coding agent (a bundle of twelve skills and the `cad` viewer server), allows the server for sessions under the prefix the agent gives it, and downloads the CAD runtime once while you watch; the install runs in the background. A **CAD tools** check reports uv and the slicer or printer apps found. A CAD goal created before the install waits on its page with an install button.
+- **CAD Viewer** (text-to-cad's own viewer) is a preview app of every CAD goal, started only by you.
+- Every session runs cadgen with usage statistics and update checks off; your own use of text-to-cad keeps its settings.
+
+## Settings → Safety → Desktop apps & printers
+- Off by default: the boundary guard refuses commands that open desktop apps or hand files to printers (`open …`, `xdg-open`, `osascript`, `Start-Process`, the slicers' windows) and text-to-cad's Bambu hand-off skill; headless slicing, preflight reports and part lookups stay available. A refused command comes to the Inbox with its own wording; a refused skill is noted on the goal.
+
+## Also
+- Bundle installs are background operations the Setup and goal pages follow.
+- A plugin's shipped MCP servers carry their deny lists in the skills catalog, under the prefix each coding agent gives them.
+
 ## 1.9.0 — 2026-10-16
 
 - docs: review fixes in the guide, CONTEXT and ADR-0032; the investigation caps under Limits
