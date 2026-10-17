@@ -1,5 +1,43 @@
 # Foundry releases
 
+## 1.10.1 — 2026-10-17
+
+- docs(adr): ADR-0033 records rename-over copies, recorded landing failures and stale resolution sessions
+- fix(delivery): a PR closed during the merge settle fails as closed
+- fix(engine): a baseline that cannot be measured leaves a note
+- fix(engine): a manual resolution ignores untracked leftovers, starts over on the task's newer work, and refuses after a skip
+- fix(engine): a landing records the files it could not copy, and the milestone says so
+- fix(engine): an artifact copy replaces the file by rename, and a folder it cannot read counts as a failure
+- docs(adr): ADR-0033 says which exports a manual resolution lands
+- fix(engine): a manual resolution lands exports that match the code it kept, and a Finish whose commit already landed only finishes up
+- docs(adr): ADR-0033 records landing, baseline and manual-resolution safety
+- fix(delivery): the merge settle stops as soon as the PR is merged or closed
+- fix(preview): a tailnet name a URL cannot hold no longer fails the preview status
+- fix(notify): files reach Telegram with the content type of their format
+- fix(engine): milestone copies are reused only when whole, large images are linked, and a task that changed nothing shows what its milestone names
+- fix(engine): baselines run one at a time per goal, are keyed by their exports, and are strict when the exports cannot be copied
+- fix(engine): a manual resolution keeps the person's work, and a Finish cut short is completed
+- fix(engine): a landing skips tracked files and keeps the worktree when a copy fails; copies never write through a link
+- docs(adr): ADR-0033 records landed artifacts, safer check-worktree copies and the viewer link that follows
+- fix(prompts): a CAD decorator's out= is relative to the model script, and the CAD review and Clarifier rules are tested
+- test(delivery): the merge settle proves its wait, its conflict and branch protection; a PR merged meanwhile is merged
+- fix(web): the preview card names the CAD Viewer when it is the goal's only app
+- fix(web): a milestone of files shows snapshots whole, says what the task produced, and links its files
+- fix(notify): a milestone of files speaks of what the task produced, and a refused picture no longer drops the message
+- fix(preview): the CAD Viewer's link follows the newest assembly and keeps its model on the tailnet
+- fix(engine): a milestone of files shows the task's own files, each under its own copy
+- fix(engine): the artifacts listing follows no symbolic link
+- fix(engine): finishing a manual resolution anyway lands it, and a resolution without its merge starts over
+- fix(engine): artifacts copied for checks skip what git tracks and never stop them; a merge is judged with its own exports
+- fix(engine): a manually resolved task's exports reach the goal, and every landing records its files
+- fix(server): a milestone's JPEG, WebP, GIF, MP4 and MOV copies are served
+- fix(delivery): a merge refused as not mergeable right after a push waits for GitHub to settle
+- fix(engine): a milestone of files shows first the images its text and manifest name
+- fix(engine): the worktrees that run the goal's checks get its artifacts
+- docs(adr): ADR-0033 records the export layout override, the viewer link and file milestones
+- fix(cad): Foundry's export layout overrides the cad skill's, and nothing committed points into the plugin folder
+- fix(engine): a milestone of files shows the files, and the CAD Viewer opens the goal's model
+
 ## 1.10.0 — 2026-10-16
 
 ## CAD goals with text-to-cad
