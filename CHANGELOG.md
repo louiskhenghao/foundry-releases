@@ -1,5 +1,13 @@
 # Foundry releases
 
+## 1.10.3 — 2026-10-18
+
+- docs: record how unverified merge commits and re-deliveries are handled
+- fix(delivery): the after-merge tidy-up keeps what a copy, a restart or a busy folder still needs
+- fix(delivery): deliver artifacts again after a restart, replacing only the copies made there
+- fix(engine): a manual resolution's checks and baseline read one copy of the goal's exports
+- fix(engine): nothing builds on a merge attempt's commit that did not land
+
 ## 1.10.2 — 2026-10-18
 
 - docs: record the CAD review follow-ups in ADR-0033, the architecture and the guide
