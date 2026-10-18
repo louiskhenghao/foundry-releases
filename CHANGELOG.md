@@ -1,5 +1,19 @@
 # Foundry releases
 
+## 2.0.0 — 2026-10-18
+
+- feat: Deliverables and Replan — a task promises the files it makes, and the planner touches up the steps that follow a Delegated goal
+- feat: Delegated goals run side by side within the goal's parallel limit, each with a share of the budget
+- fix: a session cut before its result line is unmeasured — its turns and tokens are counted and its cost shows as unknown, not zero
+- feat: Telegram takes answers — buttons and replies under the messages that wait for you, /inbox, and a Brief ready message
+- feat: Discord takes answers through a bot beside the webhook, read over the gateway
+- feat: Learnings — what a folder's goals taught, written when a goal ends and given to the next goals there
+- feat: Deploy — a finished goal's web app to Vercel, Netlify or Cloudflare Pages, on your click; workers and backends are never deployed
+- feat: Subjects — pictures of the real things a goal depicts, found while the Brief waits, that workers build from and reviews compare against, with a Likeness review of each milestone
+- feat: a Timeline tab — where a goal's time went, with its delegated goals, on one time axis
+- upgrade: the database is migrated when the new version starts (session cost status, learnings). Back up the data folder first: going back to 1.x needs that backup.
+- not yet checked against the real services (covered by tests with fakes): Telegram and Discord answers, deploys to Vercel, Netlify and Cloudflare Pages, and the Subject picture search and Likeness review.
+
 ## 1.10.3 — 2026-10-18
 
 - docs: record how unverified merge commits and re-deliveries are handled
