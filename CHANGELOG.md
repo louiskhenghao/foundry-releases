@@ -1,5 +1,35 @@
 # Foundry releases
 
+## 1.10.2 — 2026-10-18
+
+- docs: record the CAD review follow-ups in ADR-0033, the architecture and the guide
+- fix(web): say why evidence media cannot show, and list only the other artifacts
+- fix(web): say that the CAD Viewer opens only on Foundry's computer
+- fix(web): left-align Brief option buttons, with a fixed radius
+- test(notify): pin that Discord's plain-links retry pings nobody either
+- fix(transfer): leave behind only the clip copies an output folder received
+- fix(engine): undo leftover overlays at start, run no goal before that, and bound stop()'s waits
+- fix(delivery): hold the after-merge tidy-up only for files that exist nowhere else
+- fix(delivery): treat a PR merged or closed on GitHub as such at every merge step
+- fix(engine): land a task's exports with its commit and take back merge attempts that do not land
+- fix(engine): skip merge baselines without must checks and key them by export contents
+- fix(engine): keep newer exports and the goal's saved copies safe across landings, retries and overlays
+- refactor: share the CAD Viewer key and the style-sample folder name
+- fix(engine): copy artifacts safely and digest them as a stream
+- fix(core): record settled landing failures, a delivery's start and a waiting tidy-up
+- docs: ADR-0033 and the notifications guide describe the review follow-ups
+- fix(merge): a squash that conflicts at integration is checked with the task's exports
+- fix(checks): a baseline is keyed by what the exports hold, not their sizes and times
+- fix(transfer): a finished goal leaves its milestones' clip copies behind
+- perf(artifacts): artifact copies run off the event loop
+- perf(preview): the CAD Viewer's model is not searched for on every status poll
+- fix(delivery): cleanup after a merge keeps files that exist nowhere else
+- fix(artifacts): files a landing missed are copied again before delivery
+- fix(preview): the CAD Viewer is never put on the tailnet
+- fix(web): a paused milestone of files does not list the goal's artifacts again
+- fix(delivery): a conflict found while settling a merge is re-synced, not failed
+- fix(notify): refused pictures go as files and Discord pings nobody
+
 ## 1.10.1 — 2026-10-17
 
 - docs(adr): ADR-0033 records rename-over copies, recorded landing failures and stale resolution sessions
