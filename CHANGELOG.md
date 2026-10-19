@@ -1,5 +1,17 @@
 # Foundry releases
 
+## 2.0.1 — 2026-10-19
+
+- feat: the Timeline reads like a Gantt chart — quiet stretches fold, the chart fits while it reads well and otherwise slides beside the fixed row names, with a rail showing the whole goal; a bar or a row's name opens its details, with Open task and Open delegated goal
+- feat: a session cut before it reported its cost shows an estimate (≈) at its model's measured rate, never counted in a total or a budget; the cost meter puts cut sessions behind a dot
+- feat: open pages reload themselves into a new version after an update, and a page with an unsaved edit asks first (pages left open from 2.0.0 need one reload by hand)
+- feat: Learnings laid out like Agents and Extensions — a chip per kind with its count, search, folding folder cards; each learning added, changed or removed on its own, in a window
+- fix: the Inbox is an icon button with its count, beside New goal
+- fix: pictures and clips open in one lightbox — evidence four to a row, the arrows under a stage of one height, a swipe on a phone; a task's file preview steps the same way
+- fix: on a phone, Open delegated goal sits in the delegated goal's box, and the timeline's rows and small buttons keep their height
+- fix: on iOS, a dialog no longer focuses its first field, and a field no longer zooms the page
+- upgrade: no database changes; going back to 2.0.0 needs no backup
+
 ## 2.0.0 — 2026-10-18
 
 - feat: Deliverables and Replan — a task promises the files it makes, and the planner touches up the steps that follow a Delegated goal
