@@ -1,5 +1,14 @@
 # Foundry releases
 
+## 2.2.0 — 2026-10-20
+
+- Workflow suites: a goal fixes whose skills its roles follow — mattpocock (default), pstack or plain — on the New goal form (Powered by), with a Settings default; follow-ups start from the earlier goal's choice, delegated goals take their main goal's; every prompt names the suite (ADR-0049)
+- pstack as a suite: Foundry keeps one pinned release (v0.9.93) as its own hook-less copy and loads it per session; a bug task starts from pstack's tdd, feature and refactor tasks get deslop and blast-radius, the final review runs thermo-nuclear-review (thermos for a large branch), the merger fix-merge-conflicts, the documenter technical-writing; one Setup card installs it, the Extensions page shows it as one source with Re-sync, Codex goals get its skills linked into the workspace
+- Learnings shared with your own sessions: each folder's Learnings are written into the repository as the project skill foundry-learnings (kept out of git, rewritten whenever they change); on the pstack suite the Learnings session reflects with reflect's lenses (ADR-0050)
+- A second opinion on the Brief: a reviewer that did not write it reads it against the repository, on the goal reviewer's model, and proposes what to change as a checklist on the Brief page — on demand, or on every Brief with the new Settings switch (ADR-0051)
+- gstack is no longer known to Foundry: no catalog entry, no provenance family, no special cases (ADR-0048)
+- Extensions page: catalog entry details open in a window, side panels pin only when they fit, the Agents badge sits on the link's corner, the pr skill joins the catalog
+
 ## 2.1.0 — 2026-10-20
 
 - Notes: a note from you is a Decision whether the interview asked for it or not — add one in the interview or on the Brief page; Revise and Re-run honour it (ADR-0044)
