@@ -1,5 +1,16 @@
 # Foundry releases
 
+## 2.1.0 — 2026-10-20
+
+- Notes: a note from you is a Decision whether the interview asked for it or not — add one in the interview or on the Brief page; Revise and Re-run honour it (ADR-0044)
+- Revise can ask you back before it proposes; a proposal is a review checklist with word-level before/after and one Apply button; every Brief section has its own colour (ADR-0045)
+- Skeleton-first Brief: the page opens as soon as the understanding is in and fills in while the planner works; it can be edited during planning; Clarify shows its stage, queue position and per-step timings (ADR-0046)
+- Interactive sessions (Clarify, planner, Revise) no longer queue behind work sessions at the concurrency limit; cancelling a goal kills its queued or running Clarify session
+- Codex: a worker's next attempt is no longer told that every mandated skill was "not invoked"
+- The mattpocock skills pinned to v1.3.1: writing-for-agents mandated by the files a task touches, the Learnings session opens with retro, and PR bodies follow the pr template — Summary, Decisions, Evidence, Merge Danger (ADR-0047)
+- Extensions page: a catalog entry's details open in a window, side panels pin under the top bar only when they fit, the Agents badge sits on the link's corner, gstack's own retro is no longer mistaken for the mattpocock one, and the pr skill joins the catalog
+- Migration 0007 adds the Brief skeleton column; the engine applies it on first start
+
 ## 2.0.1 — 2026-10-19
 
 - feat: the Timeline reads like a Gantt chart — quiet stretches fold, the chart fits while it reads well and otherwise slides beside the fixed row names, with a rail showing the whole goal; a bar or a row's name opens its details, with Open task and Open delegated goal
