@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.2.1 — 2026-10-20
+
+The second opinion on the Brief has the room of a goal review (60 turns, a worker session's budget never under $6, twenty minutes, one nudge for the answer) and is written in the background: the Brief page follows it through the goal detail, a reload or another tab finds it, and one that could not finish says why until the next comes in. The server's idle timeout is Bun's maximum. Also since v2.2.0: the Extensions page marks the installed skills no session invoked over the last goals (an unused chip, an "unused only" filter, a note under the Skills heading; GET /api/skills carries the usage), and the New goal form prefills its workflow suite, TDD and Ponytail from the newest goal in the same folder.
+
 ## 2.2.0 — 2026-10-20
 
 - Workflow suites: a goal fixes whose skills its roles follow — mattpocock (default), pstack or plain — on the New goal form (Powered by), with a Settings default; follow-ups start from the earlier goal's choice, delegated goals take their main goal's; every prompt names the suite (ADR-0049)
