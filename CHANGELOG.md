@@ -1,5 +1,26 @@
 # Foundry releases
 
+## 2.3.0 — 2026-10-21
+
+- feat: a goal from a GitHub issue — the New goal form reads the issue into the goal, and the goal's pull request closes it (ADR-0052)
+- feat: review comments on a goal's pull request are picked up by the delivery and addressed in a fix task, with a reply under each, within the policy's review rounds (ADR-0053)
+- feat: Schedules — a goal recipe that runs daily, weekly or monthly on its own; its Brief can be approved by the engine, a blocking question still waits for you (ADR-0054)
+- feat: an everywhere notebook — Learnings of your own that go with you into every folder's goals and their exported skill (ADR-0055)
+- feat: the Brief's estimate is read with how far earlier goals ran from theirs (ADR-0056)
+- feat: browser QA — the finished app tried in Chromium against the acceptance checks before the final review; a failed must check becomes a fix task (ADR-0057)
+- feat: smoke after a deploy — the goal's milestone scripts run against the deployed address (ADR-0058)
+- feat: Revert — a merged goal undone through a pull request from its page (ADR-0059)
+- feat: Reports — what Foundry cost and did over a window, by project and session kind, on a page of its own and in the CLI (ADR-0060)
+- feat: Access — a token per person for a shared Foundry, and who created a goal, approved its Brief and answered (ADR-0061)
+- feat: companion repositories — a goal that also changes other folders; each part is done by a delegated goal in its own repository and delivered with the goal (ADR-0063)
+- dev: a role-prompt regression set — fixed small goals run against the real coding agent, judged and compared with a baseline (ADR-0062)
+- fix: goals created before this release no longer crash their page or the pull-request watch, and a background check that fails is logged instead of ending the server
+- fix: stopping the engine closes its database, so test runs on macOS no longer die with exit 137; work still in flight then reads and writes an in-memory copy
+- fix: install.sh updates an older Bun, and a skipped sign-in question no longer ends the installer
+- upgrade: Bun 1.4 or newer — Bun 1.3 can end a browser Foundry opened for a self-check or a walkthrough (oven-sh/bun#33828). The image ships Bun 1.4.3, install.sh updates Bun, and Doctor warns below 1.4.
+- upgrade: migration 0008 adds the schedules table; the engine applies it on first start. Back up the data folder first: going back to 2.2 needs that backup, since 2.2 does not read the new events.
+- not yet checked against the real services (covered by tests with fakes): issues, review comments and revert pull requests on a live GitHub repository; smoke against a live Vercel, Netlify or Cloudflare Pages deploy; browser QA with a real session. The regression set has not been run against a real agent yet.
+
 ## 2.2.1 — 2026-10-20
 
 The second opinion on the Brief has the room of a goal review (60 turns, a worker session's budget never under $6, twenty minutes, one nudge for the answer) and is written in the background: the Brief page follows it through the goal detail, a reload or another tab finds it, and one that could not finish says why until the next comes in. The server's idle timeout is Bun's maximum. Also since v2.2.0: the Extensions page marks the installed skills no session invoked over the last goals (an unused chip, an "unused only" filter, a note under the Skills heading; GET /api/skills carries the usage), and the New goal form prefills its workflow suite, TDD and Ponytail from the newest goal in the same folder.
