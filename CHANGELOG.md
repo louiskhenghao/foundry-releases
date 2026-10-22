@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.4.1 — 2026-10-22
+
+- feat(web): the ⚙ menu now puts each page's name on the first line and what it is for on a smaller second line (Transfer, Ports, Learnings, Schedules, Reports, Help). Before, both were in one label that wrapped unevenly. The guide names Transfer and Ports as the menu shows them.
+
 ## 2.4.0 — 2026-10-22
 
 - feat: the Antigravity CLI as a third coding agent. You choose it per goal on New goal, and it has its own account, model and effort. The Usage page shows its weekly quota per model group, its skills are linked into each workspace, and its model carries over to follow-ups, delegated parts and scheduled runs. It reports no dollar figures, and Foundry manages no plugins or MCP servers for it (ADR-0064). It needs agy 1.1.15 or newer on a local install; the Docker image does not ship it.
