@@ -1,5 +1,10 @@
 # Foundry releases
 
+## 2.5.2 — 2026-10-22
+
+- fix: Netlify deploys stay on one site. The deploy folder's clean-up deleted Netlify's link to its site wherever the project does not ignore .netlify (Netlify's CLI does not add it to .gitignore), and Netlify then made a new site, <name>-<suffix>, with a new address on every deploy after the first. The hosts' links now stay between deploys.
+- upgrade: no migration. A Netlify site duplicated this way before 2.5.2 stays in your Netlify account; delete it there.
+
 ## 2.5.1 — 2026-10-22
 
 - fix: Netlify — a team slug the token cannot reach (Netlify answers it with a bare "Failed to create site: 404") is named in the failure, with where to set it; npm's own warnings and the CLIs' colours no longer hide a host's error. Settings says the Netlify and Vercel team fields take the team's slug, not its name.
