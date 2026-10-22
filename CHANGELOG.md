@@ -1,5 +1,13 @@
 # Foundry releases
 
+## 2.4.0 — 2026-10-22
+
+- feat: the Antigravity CLI as a third coding agent. You choose it per goal on New goal, and it has its own account, model and effort. The Usage page shows its weekly quota per model group, its skills are linked into each workspace, and its model carries over to follow-ups, delegated parts and scheduled runs. It reports no dollar figures, and Foundry manages no plugins or MCP servers for it (ADR-0064). It needs agy 1.1.15 or newer on a local install; the Docker image does not ship it.
+- feat: the Goals list folds a goal and its follow-ups into one entry. The entry opens by itself while one of them is under way, and expand all / collapse all open or close every group.
+- feat: Open source credits, a page reached from Settings → About & updates. It credits the projects Foundry is built on and gives the license notices of everything the image ships. The image also carries the notices in /app/THIRD-PARTY-NOTICES.txt.
+- upgrade: no migration.
+- not yet checked against the real service: what agy reports when a model group's quota runs out. Until then, a session that hits it fails and is retried instead of pausing Antigravity.
+
 ## 2.3.0 — 2026-10-21
 
 - feat: a goal from a GitHub issue — the New goal form reads the issue into the goal, and the goal's pull request closes it (ADR-0052)
