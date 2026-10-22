@@ -1,5 +1,26 @@
 # Foundry releases
 
+## 2.5.0 — 2026-10-22
+
+- docs: the Usage page per account, in the guide and ADR-0065
+- feat(web): the Usage page lists each account's windows or quota
+- feat(engine): the usage summary follows the current account and lists every account
+- feat(core): each account's own rate-limit windows are kept
+- feat(web): the Accounts page leads with each coding agent, and signing in shows its steps
+- docs(guide): several accounts, Switch and continue, and the log lines they add
+- docs(adr): ADR-0065, several accounts per coding agent, and the glossary's Account words
+- fix(engine): an added account never signs in with the machine's OAuth token
+- feat(web): the Accounts page holds several accounts per coding agent
+- feat(notify): a usage pause offers Switch and continue from the chat, and an automatic switch is told
+- feat(server): routes for a coding agent's accounts, and Switch and continue
+- feat(engine): sessions run on the coding agent's current account, and a usage limit can move them to the next
+- feat(runner): a session can run in an added account's home
+- feat(core): a coding agent's accounts and the one its sessions run on
+- feat(engine): a session that cannot be resumed hands its work to a new one
+- fix(engine): a session a usage limit stops resumes instead of costing an attempt
+- fix(engine): every coding agent's usage-limit stop pauses its sessions
+- Not yet tested on real accounts: resuming a session on another account. When the coding agent refuses, a new session takes over with a handoff (tested).
+
 ## 2.4.1 — 2026-10-22
 
 - feat(web): the ⚙ menu now puts each page's name on the first line and what it is for on a smaller second line (Transfer, Ports, Learnings, Schedules, Reports, Help). Before, both were in one label that wrapped unevenly. The guide names Transfer and Ports as the menu shows them.
