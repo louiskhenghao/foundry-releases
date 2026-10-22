@@ -1,5 +1,16 @@
 # Foundry releases
 
+## 2.7.0 — 2026-10-22
+
+- feat(skills): a workflow suite (Matt Pocock's skills, pstack) can move to a later release from the Extensions page, and back to the pin. A forecast comes first: which skills that release removes, deprecates and adds, the ones Foundry's workflow uses on top (ADR-0068).
+- fix(skills): a skill folder that links into another folder (another tool's install, your own clone) is listed under Linked from another folder and left to where it links: no Adopt, never a stale copy of a plugin skill that shares its name, and installing a bundle keeps it (ADR-0069).
+- feat(web): empty and loading look designed. An empty page, tab or list shows a placard with its kind's icon, how something comes to be there and the action that puts it there; a page that loads shows the same placard with a spinner and what it is loading.
+- feat(web): a goal's tabs stay at the top while a tab scrolls, and every tab is at least a screen tall, so switching to a short one never moves the page.
+- feat(web): the Brief's section menu starts with Back to goal (on a phone, a Goal chip pinned at the start of the row).
+- feat(web): every group on the Extensions pages starts closed; a search or a filter opens every group with a match, and a closed group says when a source in it has an update.
+- fix(web): the time ruler's estimate stands on a row of its own instead of running into the limit's label, and the Agents count sits filled on its link's corner instead of pushing Extensions aside.
+- upgrade: no migration.
+
 ## 2.6.0 — 2026-10-22
 
 - feat(web): a new look, Wayfinding: Foundry read as a sign system. Every page is rebuilt on one kit: large page titles, a goal's five stages as plates, the Goals page as Needs you signs over Working and Finished boards, Budget & time on a goal's Overview, and a menu of sections beside the Brief, New goal and Settings.
