@@ -1,5 +1,14 @@
 # Foundry releases
 
+## 2.6.0 — 2026-10-22
+
+- feat(web): a new look, Wayfinding: Foundry read as a sign system. Every page is rebuilt on one kit: large page titles, a goal's five stages as plates, the Goals page as Needs you signs over Working and Finished boards, Budget & time on a goal's Overview, and a menu of sections beside the Brief, New goal and Settings.
+- feat(web): themes. Settings → Appearance picks a theme and light or dark, for each browser: Wayfinding (the default), Ledger (paper and ink, serif titles, a column down the left) or Classic (the look Foundry had before themes). A theme sets the layout as well as the colours: where the navigation sits, how titles, stages, labels and signs look, raised or flat cards.
+- feat: themes of your own. Make a copy writes a theme as a JSON file in the data folder's themes/, Open in your editor opens it, and the page shows each saved change at once; a theme of your own can be renamed, exported or deleted, and a theme file imported. A file with a mistake is listed with what to fix, and the theme keeps its last good look.
+- feat(web): colour says one thing each: yellow only for what waits for you; how something stands in its signal colour on its small mark (done green, at work blue, in review violet, failed red); things of a kind (the Brief's sections, Areas, extension sources) in eight category colours.
+- fix(web): phones. The stages, the section menus (a row of chips), the Brief's actions (docked at the foot of the screen), dialogs and the sign-in steps fit a phone's width, and the app no longer scrolls past the end of a page.
+- upgrade: no migration. The theme is chosen per browser, and Classic keeps the old look.
+
 ## 2.5.2 — 2026-10-22
 
 - fix: Netlify deploys stay on one site. The deploy folder's clean-up deleted Netlify's link to its site wherever the project does not ignore .netlify (Netlify's CLI does not add it to .gitignore), and Netlify then made a new site, <name>-<suffix>, with a new address on every deploy after the first. The hosts' links now stay between deploys.
