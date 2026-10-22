@@ -1,5 +1,15 @@
 # Foundry releases
 
+## 2.5.1 — 2026-10-22
+
+- fix: Netlify — a team slug the token cannot reach (Netlify answers it with a bare "Failed to create site: 404") is named in the failure, with where to set it; npm's own warnings and the CLIs' colours no longer hide a host's error. Settings says the Netlify and Vercel team fields take the team's slug, not its name.
+- fix: Cloudflare Pages — a new project stays on Pages. Wrangler 4 had started handing new projects to Workers, which rewrote the app's files and failed without a Workers permission; what that hand-over left behind no longer breaks later deploys, and a production deploy records the project's own pages.dev address.
+- fix: Vercel — a new project's first deploy, which Vercel always puts in production, is recorded as production with a note, and a smoke asked for the preview is not run on it.
+- fix: the smoke no longer runs its scripts against an address behind the host's login (Vercel protects previews by default; a Netlify team can let only its members in); it says which setting asks for the login.
+- feat: what a deploy adds to the project (Vercel's .gitignore line, for example) goes to GitHub the way the goal did: onto the goal's branch while its pull request is open, else in a small pull request of its own. The hosts' own folders (.vercel, .netlify, .wrangler) are added to .gitignore and never committed; a Local only goal keeps nothing.
+- feat(web): the Deploy card starts on the host the goal last deployed to.
+- upgrade: no migration.
+
 ## 2.5.0 — 2026-10-22
 
 - docs: the Usage page per account, in the guide and ADR-0065
