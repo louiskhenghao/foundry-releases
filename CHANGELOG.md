@@ -1,5 +1,13 @@
 # Foundry releases
 
+## 2.8.0 — 2026-10-23
+
+- perf(web): ask the goals before the doctor, load pages at once
+- perf(engine): concurrent doctor runs share one run
+- perf(skills): the doctor reads a skill's bytes once
+- feat(install): update a coding agent's CLI that has a newer release
+- feat(install): choose Antigravity as a coding agent
+
 ## 2.7.0 — 2026-10-22
 
 - feat(skills): a workflow suite (Matt Pocock's skills, pstack) can move to a later release from the Extensions page, and back to the pin. A forecast comes first: which skills that release removes, deprecates and adds, the ones Foundry's workflow uses on top (ADR-0068).
