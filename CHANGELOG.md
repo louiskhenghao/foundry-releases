@@ -1,5 +1,11 @@
 # Foundry releases
 
+## 2.9.0 — 2026-10-23
+
+- feat(memory): Memory — an optional Hindsight server you run keeps everything a folder's goals did, decided, were refused and wrote, and answers each stage of a goal before it starts (Clarify and the planner, every attempt, a replan, the task and goal reviews) under "What Memory recalls", beside the folder's Learnings. Set up on Extensions → MCP servers (the Memory · Hindsight card) or with the Docker installer's --with hindsight; one bank per repository (coding-agent::<folder>), shared with your own Claude Code or Codex sessions there and given the five knowledge pages Hindsight's own integration keeps, plus a bank of your own decisions across folders. The server can run on the Claude Code or Codex sign-in you already have: the wait for its answer is a setting, and the memories themselves stand in when the answer is late (ADR-0072).
+- fix(roles): a role's answer is not refused for a field its schema does not name (ADR-0071).
+- fix(web): a long commit subject stays inside the repository card; a check's result and a goal's state are each said in one set of words; expand all and collapse all reach every fold of the Goals list.
+
 ## 2.8.0 — 2026-10-23
 
 - perf(web): ask the goals before the doctor, load pages at once
