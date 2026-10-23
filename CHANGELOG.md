@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.9.1 — 2026-10-23
+
+- feat(install): Memory's Hindsight can run on your Codex sign-in — with `--with hindsight`, answer `openai-codex` as the provider (no key) and the installer signs the server in by device code, into a folder of its own beside the compose file; the Hindsight card and the guide say so.
+
 ## 2.9.0 — 2026-10-23
 
 - feat(memory): Memory — an optional Hindsight server you run keeps everything a folder's goals did, decided, were refused and wrote, and answers each stage of a goal before it starts (Clarify and the planner, every attempt, a replan, the task and goal reviews) under "What Memory recalls", beside the folder's Learnings. Set up on Extensions → MCP servers (the Memory · Hindsight card) or with the Docker installer's --with hindsight; one bank per repository (coding-agent::<folder>), shared with your own Claude Code or Codex sessions there and given the five knowledge pages Hindsight's own integration keeps, plus a bank of your own decisions across folders. The server can run on the Claude Code or Codex sign-in you already have: the wait for its answer is a setting, and the memories themselves stand in when the answer is late (ADR-0072).
