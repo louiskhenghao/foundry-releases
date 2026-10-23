@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.10.0 — 2026-10-23
+
+Conversation (beta): a bubble on the goal page and the Brief page opens a Conversation with the goal's Explainer, a read-only session of the goal's coding agent that answers your questions about the goal's code and Foundry's records of it (why a task was done that way, where something lives, what went wrong), on the preset's new Conversation row; it never changes anything, and when asked to it points the way and drafts the words. Answers stream, Stop keeps what was said, and questions queue. A Conversation tab (Expert view) lists every Conversation of a goal; from the terminal, foundry ask <goalId> "question". Its cost counts in the goal's total but not against the Budget. Switch it on under Settings → Beta.
+
 ## 2.9.1 — 2026-10-23
 
 - feat(install): Memory's Hindsight can run on your Codex sign-in — with `--with hindsight`, answer `openai-codex` as the provider (no key) and the installer signs the server in by device code, into a folder of its own beside the compose file; the Hindsight card and the guide say so.
