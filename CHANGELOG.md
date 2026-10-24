@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.10.1 — 2026-10-24
+
+Conversation (beta) polish: on the Conversation tab the thread reads as a column in the middle of the card, an empty Conversation offers three questions to start from, the composer grows with what you type, the list has a New Conversation row and the thread is titled by its first question in normal case.
+
 ## 2.10.0 — 2026-10-23
 
 Conversation (beta): a bubble on the goal page and the Brief page opens a Conversation with the goal's Explainer, a read-only session of the goal's coding agent that answers your questions about the goal's code and Foundry's records of it (why a task was done that way, where something lives, what went wrong), on the preset's new Conversation row; it never changes anything, and when asked to it points the way and drafts the words. Answers stream, Stop keeps what was said, and questions queue. A Conversation tab (Expert view) lists every Conversation of a goal; from the terminal, foundry ask <goalId> "question". Its cost counts in the goal's total but not against the Budget. Switch it on under Settings → Beta.
