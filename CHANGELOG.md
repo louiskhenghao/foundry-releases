@@ -1,5 +1,14 @@
 # Foundry releases
 
+## 2.12.0 — 2026-10-24
+
+- **The Explainer proposes, the person applies.** Ask the Conversation for a change — add a task, fix this, from now on do that, here are the files for the request, open a follow-up — and the answer ends with a card: Add the task, Record the decision, Add the note, Open the New goal form, or Hand it over. Nothing changes before the press; applying is recorded once, with who and what came of it. (Conversation beta, ADR-0075)
+- A proposed task lands after the tasks it names, with the goal's must commands and its own checks; a decision goes on the Brief and into the hint of every task not yet started; a note goes on a Brief awaiting approval; a follow-up opens the New goal form prefilled; a hand-over gives files from the Conversation to an open Request or a promised material — the goal gets copies of its own, marked with the Request.
+- The Explainer's records gain `materials.md` (promised materials with keys, open Requests with ids) and the ids of the files attached to a question. `foundry ask` lists what was proposed, with ids, and keeps the proposal block itself off the terminal.
+- Fixed: a Request answered with files that could not be taken in was recorded as answered with nothing done; now the files come first and a Request that cannot take them stays open.
+- Fixed: a question's uploads stayed registered as staged after they were claimed.
+- Fixed: words in angle brackets in Markdown (`<p>`, `<title>`) were dropped on the page; they are shown as written now, with HTML comments still hidden.
+
 ## 2.11.0 — 2026-10-24
 
 A goal can ask for what only you can give. A worker that cannot finish without a private asset, a key or a decision that is yours stops and asks: an Inbox item says what, why and where to get it, and takes your words, files and links — the same session then goes on with them (or without, if you say there is none). Materials you promise during Clarify are listed on the Brief under You will provide, each with the tasks that need it and a choice: wait for it (Foundry asks when a task is ready) or build with a placeholder first and swap it in when it arrives; hand things over on the Brief page or the goal page whenever you have them. An attachment you add while the goal runs is announced to the tasks not yet started.
