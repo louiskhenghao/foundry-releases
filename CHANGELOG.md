@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.10.2 — 2026-10-24
+
+Conversation (beta): a question can carry pictures and files (the clip in the box, a paste, or a drop; up to eight), which the Explainer opens; the composer is one box with the files, the words and the send button; the window sits above the bubble instead of over it; New Conversation only becomes a row of the list once its first question is sent.
+
 ## 2.10.1 — 2026-10-24
 
 Conversation (beta) polish: on the Conversation tab the thread reads as a column in the middle of the card, an empty Conversation offers three questions to start from, the composer grows with what you type, the list has a New Conversation row and the thread is titled by its first question in normal case.
