@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.11.0 — 2026-10-24
+
+A goal can ask for what only you can give. A worker that cannot finish without a private asset, a key or a decision that is yours stops and asks: an Inbox item says what, why and where to get it, and takes your words, files and links — the same session then goes on with them (or without, if you say there is none). Materials you promise during Clarify are listed on the Brief under You will provide, each with the tasks that need it and a choice: wait for it (Foundry asks when a task is ready) or build with a placeholder first and swap it in when it arrives; hand things over on the Brief page or the goal page whenever you have them. An attachment you add while the goal runs is announced to the tasks not yet started.
+
 ## 2.10.2 — 2026-10-24
 
 Conversation (beta): a question can carry pictures and files (the clip in the box, a paste, or a drop; up to eight), which the Explainer opens; the composer is one box with the files, the words and the send button; the window sits above the bubble instead of over it; New Conversation only becomes a row of the list once its first question is sent.
