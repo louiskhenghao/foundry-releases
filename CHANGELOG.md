@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.13.0 — 2026-10-24
+
+Figure goals (beta): a kind of goal of its own for interactive isometric figures of everyday objects and machines, one self-contained HTML page each, drawn by the new Figure pack — April Zhu's Colorfigures (hand-inked colour, working buttons, a see-through) or iso-glow (dark glowing line art), both bundled with Foundry as snapshots of their author's archives and installed by copying. The page is committed in the repository (figures/<name>.html, its source beside it); Foundry opens every delivered page headless when a task lands, fails the task on script errors, screenshots it for the Have a look card and the task drawer, and shows pages in a sandboxed frame that can never act as Foundry. A goal may pick the other installed style; figure sessions get at least 45 minutes; the doctor checks Chromium, python3 and a Chrome; the Docker image gains python3 and a google-chrome shim. Switch it on under Settings → Beta → Figure goals (ADR-0076).
+
 ## 2.12.0 — 2026-10-24
 
 - **The Explainer proposes, the person applies.** Ask the Conversation for a change — add a task, fix this, from now on do that, here are the files for the request, open a follow-up — and the answer ends with a card: Add the task, Record the decision, Add the note, Open the New goal form, or Hand it over. Nothing changes before the press; applying is recorded once, with who and what came of it. (Conversation beta, ADR-0075)
