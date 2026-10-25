@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.15.0 — 2026-10-25
+
+Adjust the result (beta): a finished goal's page takes your words on its result — what should change, with pictures or files — and the goal carries them out itself: the session that did the work picks up where it left off (a goal of one task), or a task is added after the finished ones, or a failed goal's failed tasks run again with your words. The adjustment lands as a commit of its own, so a pushed branch is never rewritten; the checks and reviews run again; the output folder and an open pull request get the new result; the result as it was is kept under artifacts/.history and listed under each adjustment. A merged goal is not adjusted (start a follow-up). Switch it on under Settings → Beta → Adjust the result (ADR-0078).
+
 ## 2.14.0 — 2026-10-25
 
 - docs(adr): the motion-studio record is ADR-0077 (0076 went to figure goals on main)
