@@ -1,5 +1,28 @@
 # Foundry releases
 
+## 2.14.0 — 2026-10-25
+
+- docs(adr): the motion-studio record is ADR-0077 (0076 went to figure goals on main)
+- fix(review): scores a reviewer wrote in its notes count
+- fix(checks): a command check gets the engine's Playwright like a session does
+- fix(server): the Beta filter of the skills overview tolerates a manager that returns no catalog
+- docs(guide): the Motion studio page tells how a film is made
+- feat(engine): the motion-studio engine on a video goal
+- feat(skills): the motion-studio skill, bundled with Foundry
+- feat(review): a verdict carries scores on the rubric's axes
+- feat(web): a clip in the artifacts strip plays in place, with its poster
+- feat(attachments): audio and video up to 200 MB, and files the browser can seek in
+- docs(adr): ADR-0076, the motion-studio video engine
+- build(docker): ffmpeg in the image
+- feat(doctor): ffmpeg and Chromium for the motion-studio engine
+- feat(skills): a catalog entry can be bundled with Foundry
+- feat(engine): sessions learn where the engine's Playwright lives
+- feat(engine): a video goal carries its own engine and its own session cap
+- feat(settings): beta.motionStudio, the switch for the motion-studio video engine
+- fix(skills): an install moves a shared cache to the pinned commit
+- feat(catalog): Hyperframes pack on the Herk Edit Kit at 10511e5
+- feat(skills): a catalog git source can pin a commit id
+
 ## 2.13.0 — 2026-10-24
 
 Figure goals (beta): a kind of goal of its own for interactive isometric figures of everyday objects and machines, one self-contained HTML page each, drawn by the new Figure pack — April Zhu's Colorfigures (hand-inked colour, working buttons, a see-through) or iso-glow (dark glowing line art), both bundled with Foundry as snapshots of their author's archives and installed by copying. The page is committed in the repository (figures/<name>.html, its source beside it); Foundry opens every delivered page headless when a task lands, fails the task on script errors, screenshots it for the Have a look card and the task drawer, and shows pages in a sandboxed frame that can never act as Foundry. A goal may pick the other installed style; figure sessions get at least 45 minutes; the doctor checks Chromium, python3 and a Chrome; the Docker image gains python3 and a google-chrome shim. Switch it on under Settings → Beta → Figure goals (ADR-0076).
