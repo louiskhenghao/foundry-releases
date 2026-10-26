@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.16.1 — 2026-10-26
+
+Fix: the Extensions page no longer fails with “The "paths[2]" property must be of type string, got undefined”. A skill whose Foundry install record names something other than an owner/name GitHub repository, or a plugin marketplace without a GitHub repository, broke the whole update check; such a skill is now listed with nothing upstream to compare it with.
+
 ## 2.16.0 — 2026-10-25
 
 Goal templates: the New goal form starts from a pattern. Under What kind of goal is this?, Start from a template… opens Foundry's twenty-eight templates by kind — from a bug fix or a README update to a 3D product showcase website, a SaaS dashboard, an AI assistant inside an app, a brand identity kit, a feature-tour film, an exploded mechanism, a device in iso-glow line art (flat or real 3D) or an enclosure for a circuit board — each in English and 中文. A template's {{placeholders}} are its inputs: fill them in and the description writes itself, and the form takes the settings that suit the work (the kind, the view, the pace, the budget, the interview depth, a video engine or a figure style). Fill in with AI fills the inputs from your notes and Write it with AI writes a whole description; with Also read the repository either one first reads your checkout, read-only. Your own templates are Markdown files in the data folder: save one from a goal you liked (⋯ → Save as template…), copy one of Foundry's, or write one in the editor; the Templates page in the top bar lists, views, edits, exports and imports them. foundry goal new --template <id> --set key=value makes a goal from one, and a Transfer file carries your templates and themes under Templates & themes (ADR-0079). Also: a goal's header reads a Markdown description as plain words, and a goal named from a Markdown first line no longer carries the heading mark into its name and folder.
