@@ -1,5 +1,19 @@
 # Foundry releases
 
+## 2.21.0 — 2026-11-02
+
+- docs(guide): the six diagram templates by name
+- feat(templates): three more diagram templates — sequence, timeline, data model
+- feat(cli): --nature diagram
+- feat(web): the Diagrams kind, Diagram skills, the Beta switch and the drawer's diagram shots
+- feat(server): the Diagram pack view, the diagrams guide page and its default template
+- docs: diagram goals in the guide, the glossary and ADR-0083
+- feat(templates): three diagram templates, in English and 中文
+- feat(catalog): diagram-design as the Diagram pack, pinned to one commit
+- feat(engine): wire diagram goals through Clarify, attempts, reviews, adjust and the doctor
+- feat(engine): what diagram goals are told, and the diagram check
+- feat(core): the diagram nature, scenario, check kind and Diagram pack
+
 ## 2.20.0 — 2026-11-02
 
 - docs(guide): an open chain of goals, in English and 中文, and the goals screenshot
