@@ -1,5 +1,15 @@
 # Foundry releases
 
+## 2.20.0 — 2026-11-02
+
+- docs(guide): an open chain of goals, in English and 中文, and the goals screenshot
+- feat(web): an open chain of goals reads as numbered steps on one line
+- chore(scripts): the screenshot script typechecks again
+- fix(engine): the data folder test measures the folder off the event loop
+- fix(engine): the Clarifier always names the goal
+- fix(engine): tasks left unticked in a carry-over stay out of the new goal
+- fix(delivery): a Follow-up standing on an undelivered goal's branch is delivered whole
+
 ## 2.19.0 — 2026-11-02
 
 - docs(guide): a screenshot of the Data folder in Settings → Engine (install)
