@@ -1,5 +1,14 @@
 # Foundry releases
 
+## 2.17.0 — 2026-11-02
+
+- docs(guide): screenshots of the goal page and the Brief with the new head
+- docs(guide): the goal's name, Show more, Details, Rename… and the Back to goal bar
+- feat(web): the way back to the goal stays in view
+- feat(web): a goal's head fits a phone
+- feat(clarify): the Clarifier gives a goal a short name
+- feat(goals): a goal can be renamed
+
 ## 2.16.2 — 2026-11-02
 
 Fixed: the Auto budget proposed when a Brief is approved now counts what the goal already spent on Clarify and the interview. A goal's limits count everything it spent, so the old proposal (the estimate ×2 alone) could leave a small goal at its limit the moment it was approved. The proposal is now the estimate ×2 for the work, with the same $3 / 30 min floors, plus what was already spent, on the Brief page, in a Telegram approval, for scheduled runs and for goals that skip Clarify.
