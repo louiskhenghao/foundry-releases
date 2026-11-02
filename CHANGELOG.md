@@ -1,5 +1,13 @@
 # Foundry releases
 
+## 2.19.0 — 2026-11-02
+
+- docs(guide): a screenshot of the Data folder in Settings → Engine (install)
+- docs: ADR-0082, the data folder in the guide (English and 中文), the operator pages and the glossary
+- feat(web): Data folder in Settings → Engine (install), and Restart now on the restart banner
+- feat(server): foundry serve starts the engine again in its own process; the data-folder and restart routes
+- feat(engine): the data folder is chosen in ~/.foundry/config.json, tested before a switch, and copied with its paths rewritten
+
 ## 2.18.0 — 2026-11-02
 
 - docs(guide): screenshots of the goal page with Pause… as its main button
