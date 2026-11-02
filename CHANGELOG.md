@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.16.2 — 2026-11-02
+
+Fixed: the Auto budget proposed when a Brief is approved now counts what the goal already spent on Clarify and the interview. A goal's limits count everything it spent, so the old proposal (the estimate ×2 alone) could leave a small goal at its limit the moment it was approved. The proposal is now the estimate ×2 for the work, with the same $3 / 30 min floors, plus what was already spent, on the Brief page, in a Telegram approval, for scheduled runs and for goals that skip Clarify.
+
 ## 2.16.1 — 2026-10-26
 
 Fix: the Extensions page no longer fails with “The "paths[2]" property must be of type string, got undefined”. A skill whose Foundry install record names something other than an owner/name GitHub repository, or a plugin marketplace without a GitHub repository, broke the whole update check; such a skill is now listed with nothing upstream to compare it with.
