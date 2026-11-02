@@ -1,5 +1,24 @@
 # Foundry releases
 
+## 2.22.0 — 2026-11-02
+
+- feat(engine): effort levels come from the coding agent's binary
+- feat(deck): the deck is committed in the repository with the drawings of its pages
+- feat(web): the installed app fetches everything again by itself, and the menu has Reload
+- feat(web): the goals list says each state in its signal colour, with its mark
+- fix(web): a task's figure, diagram and slide shots open in the preview dialog
+- fix(skills): the Python environment is made on every install path, and on a later Install when it is missing
+- feat(cli): --nature deck
+- feat(web): the Slides kind, Deck skills, the Beta switch and the drawer's slide previews
+- feat(server): the Deck pack view, the decks guide page and its default template
+- docs: deck goals in the guide, the glossary and ADR-0084
+- feat(templates): four deck templates, in English and 中文
+- feat(catalog): ppt-master as the Deck pack, pinned to a release, with its Python environment
+- feat(engine): wire deck goals through Clarify, attempts, reviews, adjust and the doctor
+- feat(engine): what deck goals are told, and the deck check
+- feat(skills): a Python environment for a skill whose scripts need packages
+- feat(core): the deck nature, scenario, check kind and Deck pack
+
 ## 2.21.0 — 2026-11-02
 
 - docs(guide): the six diagram templates by name
