@@ -1,5 +1,15 @@
 # Foundry releases
 
+## 2.18.0 — 2026-11-02
+
+- docs(guide): screenshots of the goal page with Pause… as its main button
+- fix(web): a carried-over goal's form says Create & confirm the Brief, and its description step reads carried over, not missing
+- fix(engine): Resume leaves a session that ignored the stop alone
+- docs: ADR-0080 Pause and Resume, ADR-0081 Carry over, the guide and the glossary
+- feat(web): Pause…, Resume… and Cancel goal… on the goal page; Carry over its unfinished tasks on the New goal form
+- feat(engine): Pause, Resume, a clean Cancel, and carrying unfinished tasks into a Follow-up
+- feat(core): a paused goal state, and the transitions Resume and Carry over need
+
 ## 2.17.0 — 2026-11-02
 
 - docs(guide): screenshots of the goal page and the Brief with the new head
