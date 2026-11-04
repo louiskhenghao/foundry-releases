@@ -1,5 +1,18 @@
 # Foundry releases
 
+## 2.23.0 — 2026-11-04
+
+- fix(video): the first milestone of a HyperFrames film is its first sheets, not the storyboard
+- fix(editor): a Re-render replaces the delivered films in place through the loudness pass, and is delivered once
+- feat(video): the HyperFrames harness — gates, sheets, a scored critique, a loudness pass and a verifier, with templates
+- fix(editor): a film's files reach the sandbox by a token, and the editor's thumbnails stay out of git
+- docs: the Editor guide page, ADR-0086 and the glossary
+- feat(web): Editor rows on the preview card, an Editor block in the Open menu, a Re-render card, the Beta toggle
+- feat(server): a motion-studio film's scrubber page, its files in a sandbox, Re-render and the Editor on the goal view
+- feat(engine): the Editor on video goals — HyperFrames' browser editor as a person-only preview app, and Re-render
+- feat(catalog): the hyperframes skills come from their upstream
+- fix(skills): a managed skill whose catalog source moved is outdated
+
 ## 2.22.0 — 2026-11-02
 
 - feat(engine): effort levels come from the coding agent's binary
