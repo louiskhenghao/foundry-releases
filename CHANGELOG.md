@@ -1,5 +1,16 @@
 # Foundry releases
 
+## 2.24.0 — 2026-11-10
+
+- test(doctor): the sign-in check names the plan as the coding agent does
+- docs(guide): Settings opens one section at a time
+- feat(settings): one section open at a time, the menu switches between them
+- feat(web): a section menu can be a choice, for a page that shows one section at a time
+- docs: the plan an account is on is named as its coding agent names it (ADR-0088)
+- fix(web): the Accounts page says the plan's name
+- fix(accounts): the plan shown follows the sign-in, not the token's key or the name stored at sign-in
+- feat(core): name an account's plan as its coding agent names it
+
 ## 2.23.0 — 2026-11-04
 
 - fix(video): the first milestone of a HyperFrames film is its first sheets, not the storyboard
