@@ -1,5 +1,19 @@
 # Foundry releases
 
+## 2.29.0 — 2026-11-12
+
+- feat(web): the deploy place cards wear the places' own logos
+- docs: the deploy place cards in the Chinese Settings guide
+- feat(web): the deploy places in Settings as one card per host, platform and store
+- fix(deploy): what the live Render run taught — a new service's own first deploy, and a queued deploy answered with no body
+- fix(deploy): what the live EAS run taught — install first when the project has no lockfile, the build page from the CLI's real output
+- docs: ADR-0094, the stores in the guides and CONTEXT.md
+- feat(web): the stores on the Deploy card and under Settings → Git & delivery
+- feat(deploy): store builds through Expo EAS, iOS to TestFlight and Android to Google Play, with a watch on the review
+- docs: ADR-0093, the platforms and runtime variables in the guides
+- feat(deploy): the platforms, Fly.io, Railway and Render, as a third kind of place
+- feat(deploy): runtime variables per repository and deploy place
+
 ## 2.28.0 — 2026-11-12
 
 - fix(review): a goal check's verdict is matched by name even when the rubric was copied after it
