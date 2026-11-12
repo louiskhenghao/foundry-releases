@@ -1,5 +1,29 @@
 # Foundry releases
 
+## 2.27.0 — 2026-11-12
+
+- docs: the design reference ADR is 0093 (main took 0092 for the server recipes)
+- feat(brief): the design question takes the export where it is asked
+- fix(clarify): tell the Clarifier outright when a design link cannot be opened
+- docs: Bringing your own design, ADR-0092 and the glossary's Design Reference
+- feat(web): mark designs on the New goal form, warn on links no session can open, pick the Design pack per goal
+- feat(clarify): read an attached design instead of inventing a direction, and place it before the style for the worker
+- feat(goal): a goal may pick its Design pack, and an attachment can be marked as the design
+- feat(attachments): a design reference on the goal, unpacked zips, and links no session can open
+- docs: the server ADR is 0091 and the recipes ADR 0092 (main took 0090 for the accounts' usage windows)
+- docs: ADR-0092, the glossary and the guide describe the server recipes and the PM2 mode
+- feat(web): the recipe dialog on the Deploy card and under each server in Settings; a server's mode
+- feat(guard): a session cannot start, reload or delete PM2 apps on a server through ssh
+- feat(deploy): server recipes that set a server up after the person reads them, and a PM2 mode for Node.js projects (ADR-0092)
+- fix(deploy): the checkout goes to the server without a Mac's extended attributes
+- docs: the server ADR is 0091, not 0090 (main took 0090 for the accounts' usage windows)
+- docs: what a server deploy never does, the compose review, the front-door checks and the follow-up goal
+- feat(deploy): a server deploy reviews the compose file, writes only its own folder, and tells what the server lacks
+- docs: ADR-0091, the glossary and the guide describe a server of your own
+- feat(web): the Deploy card offers the servers behind a readiness check; Settings lists them
+- feat(guard): sessions cannot deploy through ssh, EAS, fastlane, Fly, Railway or Render either
+- feat(deploy): a server of your own over SSH, behind a readiness check (ADR-0091)
+
 ## 2.26.0 — 2026-11-12
 
 - fix(usage): a lapsed sign-in is tried once a quarter hour, and only the Accounts page's own poll reads usage
