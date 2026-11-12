@@ -1,5 +1,15 @@
 # Foundry releases
 
+## 2.26.0 — 2026-11-12
+
+- fix(usage): a lapsed sign-in is tried once a quarter hour, and only the Accounts page's own poll reads usage
+- docs: account usage windows in the guide, CONTEXT, the architecture and ADR-0090
+- feat(cli): foundry usage prints each account's own usage windows
+- feat(web): usage bars on every account row and on the Usage page's Accounts card
+- feat(server): accounts and usage answer with each account's own usage
+- feat(engine): one set of usage meters for every coding agent's account
+- feat(engine): read a Claude account's own usage from Claude's usage report
+
 ## 2.25.0 — 2026-11-12
 
 - fix(brag): the poster is the composition's own first frame, so a Re-render keeps it
