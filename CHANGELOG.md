@@ -1,5 +1,14 @@
 # Foundry releases
 
+## 2.28.0 — 2026-11-12
+
+- fix(review): a goal check's verdict is matched by name even when the rubric was copied after it
+- fix(review): opening the design screenshots is part of the review, not optional
+- fix(web): the Adjust card reads the design marks from a goal that may carry no attachments
+- docs: the design comparison in the guide, Settings explained, the glossary and ADR-0094
+- feat(review): the built screens are compared with the design
+- feat(clarify): small drift is a note, no checks about the reference files, the scaffold is simple work
+
 ## 2.27.1 — 2026-11-12
 
 - fix(engine): the design mark the form set on an upload survives the server's staged copy
