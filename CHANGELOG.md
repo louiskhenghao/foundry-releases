@@ -1,5 +1,10 @@
 # Foundry releases
 
+## 2.27.1 — 2026-11-12
+
+- fix(engine): the design mark the form set on an upload survives the server's staged copy
+- fix(web): a staged upload keeps its design mark through the markdown conversion
+
 ## 2.27.0 — 2026-11-12
 
 - docs: the design reference ADR is 0093 (main took 0092 for the server recipes)
