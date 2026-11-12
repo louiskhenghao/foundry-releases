@@ -1,5 +1,13 @@
 # Foundry releases
 
+## 2.25.0 — 2026-11-12
+
+- fix(brag): the poster is the composition's own first frame, so a Re-render keeps it
+- docs: /brag in the HyperFrames guide, ADR-0089, the glossary
+- feat(templates): Launch video (/brag) in English and 中文
+- feat(clarify): the HyperFrames sections say how a launch video told by /brag is cut
+- feat(catalog): /brag joins the HyperFrames bundle at its 0.5.0 release
+
 ## 2.24.0 — 2026-11-10
 
 - test(doctor): the sign-in check names the plan as the coding agent does
