@@ -1,5 +1,11 @@
 # Foundry releases
 
+## 2.30.0 — 2026-11-13
+
+- docs: ADR-0097 and the sign-in in the Settings guide
+- feat(web): a place card opens as three steps, with the sign-in and the tool inside
+- feat(deploy): sign in to Fly.io and Netlify through their CLIs, and install flyctl, from Settings
+
 ## 2.29.1 — 2026-11-13
 
 - feat(web): show the name GitHub will give the repository
