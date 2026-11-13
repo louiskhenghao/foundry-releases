@@ -1,5 +1,10 @@
 # Foundry releases
 
+## 2.31.1 — 2026-11-13
+
+- fix(deploy): the Fly.io organization is a slug, found from the name when that is what was typed
+- fix(deploy): read the organizations as flyctl prints them
+
 ## 2.31.0 — 2026-11-13
 
 - fix(deploy): a sign-in's page opens once, from the Settings page
