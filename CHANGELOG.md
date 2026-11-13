@@ -1,5 +1,16 @@
 # Foundry releases
 
+## 2.31.0 — 2026-11-13
+
+- fix(deploy): a sign-in's page opens once, from the Settings page
+- fix(deploy): the Fly.io sign-in names the organization its token is for
+- fix(web): the approval code is the plain next step of a Fly.io sign-in
+- fix(deploy): a sign-in's CLI sees no CI mark and no earlier token
+- docs: ADR-0098, the Skills card in the guide, skill-snapshots in the data folder
+- feat(web): a Skills card with every skill the goal saw, opened as the goal read it
+- feat(engine): record the skills a goal's sessions are given, as their SKILL.md read then
+- chore(docker): Claude Code 2.1.323, where fable means Fable 5.2
+
 ## 2.30.0 — 2026-11-13
 
 - docs: ADR-0097 and the sign-in in the Settings guide
