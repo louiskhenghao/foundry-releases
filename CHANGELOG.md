@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.32.0 — 2026-11-13
+
+- (no notes)
+
 ## 2.31.0 — 2026-11-13
 
 - fix(deploy): a sign-in's page opens once, from the Settings page
