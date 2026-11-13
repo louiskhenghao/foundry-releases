@@ -1,5 +1,12 @@
 # Foundry releases
 
+## 2.29.1 — 2026-11-13
+
+- feat(web): show the name GitHub will give the repository
+- fix(delivery): carry on with the repository GitHub renamed
+- fix(delivery): read a repository name with a dot off its URL
+- fix(core): spell a repository's name as GitHub will
+
 ## 2.29.0 — 2026-11-12
 
 - feat(web): the deploy place cards wear the places' own logos
