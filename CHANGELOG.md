@@ -1,5 +1,13 @@
 # Foundry releases
 
+## 2.32.0 — 2026-11-16
+
+- docs(guide): the Settings screenshot with the search box in the save bar
+- feat(settings): a search over every setting, the keys and channels as cards, the save bar inset
+- feat(settings): a place card for any outside service
+- feat(web): a CheckRow keeps the box level with the first line of its words
+- feat(release): refuse to release from a main that is behind origin/main or holds an unfinished release
+
 ## 2.31.1 — 2026-11-13
 
 - fix(deploy): the Fly.io organization is a slug, found from the name when that is what was typed
