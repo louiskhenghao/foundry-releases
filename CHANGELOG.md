@@ -1,5 +1,12 @@
 # Foundry releases
 
+## 2.33.0 — 2026-11-16
+
+- fix(templates): the language switch leaves the row of kinds alone on a phone or a tablet
+- feat(templates): the kinds' colours on the gallery
+- docs(guide): the Templates screenshot as the gallery
+- feat(templates): the Templates page as a gallery, with Use and Make a copy asking first
+
 ## 2.32.0 — 2026-11-16
 
 - docs(guide): the Settings screenshot with the search box in the save bar
