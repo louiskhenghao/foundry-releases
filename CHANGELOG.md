@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.34.0 — 2026-11-16
+
+Accounts: a Claude usage reading is kept through failed reads, said with its age (ADR-0099). Extensions: a skill the catalog pins is compared with its pin, so Update no longer promises a change it cannot make; scripts' caches no longer count as changes; Update all runs every source with an update in one operation (ADR-0100).
+
 ## 2.33.0 — 2026-11-16
 
 - fix(templates): the language switch leaves the row of kinds alone on a phone or a tablet
