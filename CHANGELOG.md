@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.35.0 — 2026-11-17
+
+Sessions: a tool call under way is no longer idleness, so a build, a test run or a sub-agent at work no longer ends a Claude Code or Codex session after five silent minutes, and a session now has 45 minutes by default instead of 20; the worker is told its cap and how to pace itself, and a research task is told to read through sub-agents and write as it goes (ADR-0101). Lean sessions (Settings, Skills; off by default): Claude Code sessions get only the MCP servers they may use, no claude.ai connector unless one is allowed, and none of your own skills that Foundry did not install, for 6 to 15% fewer tokens at every session start (ADR-0102). Concurrency (Settings, Models & limits): Fixed as before, or Auto, worked out from this computer's cores and memory and halved while it is busy; under Auto, a coding agent whose 5-hour window is 90% used runs one task at a time until it resets (ADR-0103). Reports: two more figures, the share of session time cut short by a limit and the context each turn reads, also in foundry report.
+
 ## 2.34.0 — 2026-11-16
 
 Accounts: a Claude usage reading is kept through failed reads, said with its age (ADR-0099). Extensions: a skill the catalog pins is compared with its pin, so Update no longer promises a change it cannot make; scripts' caches no longer count as changes; Update all runs every source with an update in one operation (ADR-0100).
