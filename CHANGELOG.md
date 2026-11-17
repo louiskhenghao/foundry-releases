@@ -2,13 +2,13 @@
 
 ## 2.36.0 — 2026-11-17
 
-- docs: ADR-0103, before 3.0 a switch, not an update
+- docs: ADR-0106, before 3.0 a switch, not an update
 - feat(install): switch a checkout from a running Foundry, and ask on foundry update
 - feat(cli): migrate stops and restores, and foundry repath
 - feat(web): the risk dialog before a switch to 3.0
 - feat(update): before 3.0, a checkout or a container switches instead of updating
 - feat(engine): a migration keeps the old service until the copy is made
-- docs: ADR-0102, the Foundry app and the release installs
+- docs: ADR-0105, the Foundry app and the release installs
 - feat(install): app and binary modes from GitHub Releases
 - feat(mac): Foundry.app, a menu bar shell around the engine
 - feat(cli): serve under the menu bar app, and setup, migrate and link
@@ -16,7 +16,7 @@
 - feat(engine): the engine side of the macOS menu bar app
 - feat(engine): move a source install's data folders into a release install
 - feat(engine): install git, uv, the GitHub CLI and Node.js from Setup and foundry setup
-- docs: ADR-0101, a compiled Foundry's install kinds and data folder
+- docs: ADR-0104, a compiled Foundry's install kinds and data folder
 - feat(release): build the release files and publish them as a GitHub Release
 - feat(update): GitHub Releases as the version source, and release installs that download, verify and swap
 - feat(cli): take the root from the install, with version, hook and playwright commands
