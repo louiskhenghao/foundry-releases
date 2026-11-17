@@ -1,5 +1,28 @@
 # Foundry releases
 
+## 2.36.0 — 2026-11-17
+
+- docs: ADR-0103, before 3.0 a switch, not an update
+- feat(install): switch a checkout from a running Foundry, and ask on foundry update
+- feat(cli): migrate stops and restores, and foundry repath
+- feat(web): the risk dialog before a switch to 3.0
+- feat(update): before 3.0, a checkout or a container switches instead of updating
+- feat(engine): a migration keeps the old service until the copy is made
+- docs: ADR-0102, the Foundry app and the release installs
+- feat(install): app and binary modes from GitHub Releases
+- feat(mac): Foundry.app, a menu bar shell around the engine
+- feat(cli): serve under the menu bar app, and setup, migrate and link
+- feat(engine): one Foundry per data folder
+- feat(engine): the engine side of the macOS menu bar app
+- feat(engine): move a source install's data folders into a release install
+- feat(engine): install git, uv, the GitHub CLI and Node.js from Setup and foundry setup
+- docs: ADR-0101, a compiled Foundry's install kinds and data folder
+- feat(release): build the release files and publish them as a GitHub Release
+- feat(update): GitHub Releases as the version source, and release installs that download, verify and swap
+- feat(cli): take the root from the install, with version, hook and playwright commands
+- feat(engine): find Foundry's files beside a compiled executable
+- feat(runner): run the TypeScript hooks from inside a compiled foundry
+
 ## 2.35.0 — 2026-11-17
 
 Sessions: a tool call under way is no longer idleness, so a build, a test run or a sub-agent at work no longer ends a Claude Code or Codex session after five silent minutes, and a session now has 45 minutes by default instead of 20; the worker is told its cap and how to pace itself, and a research task is told to read through sub-agents and write as it goes (ADR-0101). Lean sessions (Settings, Skills; off by default): Claude Code sessions get only the MCP servers they may use, no claude.ai connector unless one is allowed, and none of your own skills that Foundry did not install, for 6 to 15% fewer tokens at every session start (ADR-0102). Concurrency (Settings, Models & limits): Fixed as before, or Auto, worked out from this computer's cores and memory and halved while it is busy; under Auto, a coding agent whose 5-hour window is 90% used runs one task at a time until it resets (ADR-0103). Reports: two more figures, the share of session time cut short by a limit and the context each turn reads, also in foundry report.
