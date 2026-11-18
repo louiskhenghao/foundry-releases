@@ -1,5 +1,9 @@
 # Foundry releases
 
+## 2.36.1 — 2026-11-18
+
+- `foundry stop` stops a Foundry no service started: when this install's service is not running and a Foundry started some other way (a checkout run by hand) answers on its port, it is shut down the way a service is (SIGTERM, its own shutdown). Anything else on the port is named and left alone, and the stop fails instead of saying "Foundry stopped". `foundry status` no longer calls that other Foundry this install.
+
 ## 2.36.0 — 2026-11-17
 
 - docs: ADR-0106, before 3.0 a switch, not an update
