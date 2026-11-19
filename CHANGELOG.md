@@ -1,5 +1,15 @@
 # Foundry releases
 
+## 3.0.0 — 2026-11-19
+
+**Foundry 3.0 ships only as the macOS app and the Linux binary.** There is no Docker image any more (2.36.1 stays the last one), and the installer installs only the app or the binary (ADR-0108).
+
+- **Bring your goals over in one click.** An earlier install on the same computer, a source checkout or a 2.x Docker container, is found by itself. *Bring your goals over* on the Goals page (also in Settings → Engine, `foundry migrate`, and the installer) pauses its goals, stops it, copies its data folder here, points its paths and worktrees at the new place, carries its settings over and resumes the goals. The old install is kept as the backup. Goals made with another coding agent keep their launch profile (ADR-0107).
+- **Memory runs itself.** *Run Hindsight here* on the Hindsight card (Extensions → MCP servers) installs Hindsight once (about 2 GB) and runs it on this computer only, started and stopped with Foundry, with your coding agent's sign-in as its LLM: no Docker, no key (ADR-0109).
+- The installer refuses `--mode source|docker` with what to run instead, and offers the move to a 2.x install it finds.
+- `foundry stop` says stopped only once nothing answers, and names a Foundry it did not start; the `foundry` command runs the release's own installer.
+- Fixes: the motion-studio renderer finds Foundry's Playwright under Bun; the Linux tarballs carry no macOS extended attributes; the preview port range and `foundry ports` no longer speak of a container.
+
 ## 2.36.1 — 2026-11-18
 
 - `foundry stop` stops a Foundry no service started: when this install's service is not running and a Foundry started some other way (a checkout run by hand) answers on its port, it is shut down the way a service is (SIGTERM, its own shutdown). Anything else on the port is named and left alone, and the stop fails instead of saying "Foundry stopped". `foundry status` no longer calls that other Foundry this install.
