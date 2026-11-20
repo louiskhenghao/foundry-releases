@@ -1,5 +1,17 @@
 # Foundry releases
 
+## 3.1.0 — 2026-11-20
+
+**Plans that finish, session limits that follow the goal, and coding agent CLIs that stay current.**
+
+- **A planner cut short still writes its plan.** The planner gets $10 instead of $4 to read a real repository. One stopped at its budget, idle or time limit gets a short closing turn in its session that writes the plan from what it read. Before, two such planners left Briefs of one broad task per Area, with no milestones and no estimate, whose reviews then cost far more in fix tasks (ADR-0111).
+- **Session limits.** Every Claude session's dollar cap (an attempt's, a review's, the planner's, a merge's…) is multiplied by the goal's session limits. **Auto** follows the preset: Max ×3, Production ×2, Balanced and Economy ×1, and ×1.5 more at xhigh or max effort. Set the default in Settings → Models & limits, a goal's own on the New goal form, or `foundry goal create --session-limits`. A cap still never goes past what the goal has left (ADR-0112).
+- **A failed goal review says what another round costs.** The card names the review's number, what the goal has spent and what the last fix round cost, and **Retry** reads *Another fix round (~$X)*. When the failing checks change from one review to the next, it warns that another round is unlikely to settle it.
+- **Update the coding agents' CLIs from Foundry.** Setup shows a *version* check for Claude Code, Codex or Antigravity, with **Update** when a newer release is out; Settings → Models & limits says so under Sync models; `foundry setup` updates them too. Each uses the updater that fits its install. Claude Code moves to its `latest` release, because its `stable` channel lags behind the releases that bring new models such as Fable 5.2. Models are synced after the update (ADR-0110).
+- **Write with AI on a model you choose.** Settings → Models & limits → **Write with AI**, one per coding agent, sets the model *Write it with AI* and *Fill in with AI* run on (empty keeps the housekeeping model).
+- **Memory is set up on the Learnings page.** The Hindsight card moved from Extensions → MCP servers to the top of Learnings, beside each folder's Memory switch, and connects Claude Code and Codex from one place.
+- UI: a task card's origin (`goal-review-fix`…) moved to its tags row and no longer covers its state; the narrow-screen menu opens above Settings' save bar; menus close when you scroll away from them; **Reload** is now **Refresh page**, which leaves running goals alone.
+
 ## 3.0.0 — 2026-11-19
 
 **Foundry 3.0 ships only as the macOS app and the Linux binary.** There is no Docker image any more (2.36.1 stays the last one), and the installer installs only the app or the binary (ADR-0108).
