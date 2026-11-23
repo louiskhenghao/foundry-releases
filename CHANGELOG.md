@@ -1,5 +1,13 @@
 # Foundry releases
 
+## 3.2.0 — 2026-11-23
+
+**Updates you can see from the Settings menu, and Antigravity sign-ins that open only when you ask.**
+
+- **No more Antigravity sign-in pages out of nowhere.** Foundry reads Antigravity's quota and sign-in by running `agy` in the background. When agy's sign-in had lapsed and could not be renewed silently, every read opened Google's sign-in page in your browser. Those reads, and the agy sessions of a goal, now run so that agy cannot open a browser. Setup and Accounts say **not signed in** instead, and a goal's session ends at once saying so, where it used to wait a minute. While agy is signed out, the top bar asks it again every ten minutes instead of every minute.
+- **Sign in to Antigravity from Foundry.** **Sign in** on Setup and **Sign in to Antigravity** on Accounts open Google's sign-in page, because you asked for it. You can also paste the code the page gives you. Antigravity waits one minute for the sign-in. It is allowed while other goals run; running `agy` in a terminal still works.
+- **Update marks in Settings.** A blue **Update** under **Models & limits** says a coding agent's CLI has a newer release, and one under **About & updates** says a newer Foundry is out. On a phone or tablet the mark sits beside the name in the row of chips. In the **Coding agent** switch, on Settings and on Setup, a blue dot marks the agent to update. An update clears them.
+
 ## 3.1.0 — 2026-11-20
 
 **Plans that finish, session limits that follow the goal, and coding agent CLIs that stay current.**
