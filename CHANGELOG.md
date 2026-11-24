@@ -1,5 +1,14 @@
 # Foundry releases
 
+## 3.3.0 — 2026-11-24
+
+**Goals that cost less per turn and run more of their tasks at once.**
+
+- **Compact sessions.** Every turn of a Claude Code session re-reads its whole conversation. On a 1M-token model, a session could grow to several hundred thousand tokens before Claude Code shortened it, so each of its turns cost several times more. Foundry now has Claude Code compact the conversation at 250k tokens. **Settings → Models & limits → Compact sessions** offers 150k, 200k, 250k, 400k or **Auto** (Claude Code's own window).
+- **Plans that run side by side.** The planner no longer makes a task wait for another just because both change the same files: Foundry already keeps those apart. A task now waits only for work it needs. The Playwright config behind milestone scripts is written once, instead of being claimed by every milestone task, which made them all take turns. When a plan still runs mostly one task after another, the Brief says so above the graph and shows how to loosen it. The goal's log says it too.
+- **More time at xhigh and max effort.** At xhigh or max effort every turn takes longer, so a session there gets half as long again before it is cut: 67 minutes instead of 45. A goal's own attempt timeout stays as it is.
+- **The cost of cut sessions, in sight.** Claude Code reports a session's cost only when it ends, so a session cut short reports none. Foundry estimates it, but the estimate sat behind a small dot. The goal's **Spent** figure now shows it beside the total as **+≈$…**.
+
 ## 3.2.0 — 2026-11-23
 
 **Updates you can see from the Settings menu, and Antigravity sign-ins that open only when you ask.**
