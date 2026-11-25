@@ -1,5 +1,22 @@
 # Foundry releases
 
+## 3.4.0 — 2026-11-25
+
+**Merges that take minutes instead of an hour and a half, and say what they run.**
+
+- **Lighter merge checks.** When two tasks change the same lines, a merge attempt resolves the conflict. The goal's checks then run on the result.
+  - They used to run every check of the goal twice: once on the code before the merge, then on the result. On a large goal that was over an hour and a half.
+  - Now the result is checked first. Only checks that fail run on the code from before the merge.
+  - Checks of tasks not done yet are left out, since they fail on both sides anyway.
+  - Checks that run the very same command run it once and share the result.
+- **A merge says what it runs.** While a task is **merging**, its panel says what is happening under the attempts, for example *merging: checks 23/59 · Existing e2e suite still passes (4m)*. It also shows when the merger is resolving the conflict, when the code from before the merge is being checked, or when the task waits for another merge.
+- **Stop and retry during a merge really stops it.** It is not offered while the merge is working within its time limit. When pressed, it:
+  - ends the merger's session or the running check;
+  - takes back a resolution its checks have not passed;
+  - puts the task back to **ready** without using up an attempt.
+
+  Before, the checks kept running in the background beside the retry.
+
 ## 3.3.0 — 2026-11-24
 
 **Goals that cost less per turn and run more of their tasks at once.**
